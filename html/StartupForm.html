@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<title>Investor Menu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="morecss/form.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+/* toggle in label designing */ 
+.onoffswitch {
+    position: relative; 
+    width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #34A7C1; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+</style>
+<body class="w3-theme-l5">
+
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+   <a href="InvestorHomeMatch.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Home</a>
+   <a href="InvestorFavorites.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Favorites"><i class="fa fa-star"></i></a>
+   <div class="w3-dropdown-hover w3-hide-small">
+     <a href="InvestorMatch.html">
+     <button class="w3-button w3-padding-large" title="Matches"><i class="fa fa-envelope"></i></button>     
+     <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px"><span class="w3-dropdown-hover w3-black">3</span></a>
+     </div>
+   </div>
+   <a href="InvestorSetting.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Setting"><i class="fa fa-cog"></i></a>
+ 
+   <a href="SignIn.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="Logout"><i class="fa fa-sign-out"></i></a>
+   <a href="InvestorProfile.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+     <img src="images/f.jpg" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+   </a>
+  </div>
+ </div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+</div>
+
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1800px;margin-top:80px">    
+    <!-- The Grid -->
+        <div class="w3-light-grey w3-padding-64 w3-margin-bottom w3-center">
+            <h1 class="w3-jumbo">Preferences</h1>
+          </div>
+        <div class="w3-dark-grey w3-padding-64 w3-margin-bottom w3-margin-left" style = "margin-left: 10%"> 
+            <h2 class="w3-large w3-margin-left">Fill in these questions to allow us to find you better matches</h2><br><br>
+        <form class="modal-content" action="InvestorHomeMatch.html">
+        <!-- Item 1: Name of Company-->
+        <div class="w3-medium w3-margin-left">
+            <label for="name">Name of Startup:<span></span></label><br>
+            <input type="text" placeholder="Enter your Startup name" name="name" size="50" required/> 
+          </div>
+          <br><br>
+          <!-- Item 2: Logo insert-->
+          <div class="w3-medium w3-margin-left">
+            <label for="logo" > Startup Logo: <span></span></label><br>
+            <input type="file" name="logo" accept="image/*">
+          </div>
+          <br><br>
+        <!-- Item 3: Location-->
+            <div class="w3-medium w3-margin-left">
+                <label for="location">Location:<span></span></label><br>
+                <input type="text" placeholder="Enter your location" name="location" size="50" required/> 
+                  <p>Click the button to allow us to get your current location.</p>
+        
+                    <button onclick="getLocation()">Click here</button><br><br>
+              </div>
+              <br><br>
+          <!-- Item 5: Industry-->
+          <div class="w3-medium w3-margin-left">
+            <label for="industry" required>Industry:<span></span></label><br>
+            <select name="industry">
+                <option value="tech">Technology, Media & Telecommunications</option>
+                <option value="finance">Financial Services</option>
+                <option value="energy">Energy, Resources & Industrials</option>
+                <option value="consumer">Consumer</option>
+                <option value="government">Government & Public Services</option>
+                <option value="bio">Life Sciences & Health Care</option>
+                
+            </select>
+          </div>
+          <br><br>
+          <!-- Item 6: Founded-->
+          <div class="w3-medium w3-margin-left">
+            <label for="founded">Founded:<span></span></label><br>
+            <input type="year" placeholder="Enter year Company was founded" name="founded" size="50" required/> 
+          </div>
+          <br><br>
+           <!-- Item 9: Stage of Development-->
+           <div class="w3-medium w3-margin-left">
+            <label for="stage" required>Stage of Development:<span></span></label><br>
+            <select name="stage">
+                <option value="idea">Idea Stage</option>
+                <option value="development">Development Stage</option>
+                <option value="startup">Startup Stage</option>
+                <option value="expansion">Expansion Stage</option>
+            </select>
+          </div>
+          <br><br>
+           <!-- Item 17: Profitability -->
+           <div class="w3-medium w3-margin-left">
+            <label for="profit">Is company profitable:<span></span></label><br>
+            <select name="profit">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            <input type="text" placeholder="Enter current Annual Revenue in USD" name="rev" size="50" required/> 
+            </select>
+          </div>
+          <br><br>
+          <!-- Item 19: Number of exits by founding team -->
+           <div class="w3-medium w3-margin-left">
+            <label for="rev">Number of exits by founding team:<span></span></label><br>
+            <input type="text" placeholder="Enter how many exits, founding team has made" name="rev" size="50" required/> 
+           </div>
+           <br><br>
+           <!-- Item 10: Valuation of Company-->
+           <div class="w3-medium w3-margin-left">
+            <label for="round">Pre-money valuation:<span></span></label><br>
+            <input type="text" placeholder="Enter valuation of company in USD" name="round" size="50" required/> 
+          </div>
+          <br><br>
+          <!-- Item 10: Percent of Company willing to sell-->
+          <div class="w3-medium w3-margin-left">
+            <label for="round">Percent of Company willing to sell:<span></span></label><br>
+            <select name="profit">
+              <option value="yes">1% to 5%</option>
+              <option value="no">5% to 10%</option>
+              <option value="no">10% to 20%</option>
+              <option value="no">20% to 50%</option>
+              </select>
+          </div>
+          <br><br>
+         <!-- Item 11: Current Money raised -->
+           <div class="w3-medium w3-margin-left">
+            <label for="raise">Current Money Raised:<span></span></label><br>
+            <input type="text" placeholder="Enter how much total funding startup is looking for" name="raise" size="50" required/> 
+          </div>
+          <br><br>
+          <!-- Item 14: Series on (A,B,C) -->
+          <div class="w3-medium w3-margin-left">
+            <label for="series" required>Series:<span></span></label><br>
+            <select name="series">
+                <option value="a">A</option>
+                <option value="b">B</option>
+                <option value="c">C</option>
+            </select>
+          </div>
+          <br><br>
+           <!-- Item 12: Website-->
+           <div class="w3-medium w3-margin-left">
+            <label for="website">Website:<span></span></label><br>
+            <input type="url" placeholder="Enter your website url" size="50" name="website" required/>
+          </div>
+          <br><br>
+          <!-- Item 13: Pitch Deck insert-->
+          <div class="w3-medium w3-margin-left">
+            <label for="deck" > Pitch deck (in pdf): <span></span></label><br>
+            <input type="file" name="deck" accept=".pdf">
+          </div>
+          <br><br>
+        <h2 class="w3-large w3-margin-left">Preferences for Investors:</h2>
+        <div class="w3-medium w3-margin-left">
+          <label>1. Type of Investor: </label><br>
+            <input type="checkbox" id="type1" name="type1" value="PE">
+            <label for="vehicle1"> Private Equity</label><br>
+            <input type="checkbox" id="type2" name="type2" value="Angel">
+            <label for="vehicle2"> Angel Investor</label><br>
+            <input type="checkbox" id="type3" name="type3" value="VC">
+            <label for="vehicle3"> Venture Capital</label><br><br><br></br>
+
+            <label>2. Role of Investor: </label> <br>
+            <input type="checkbox" id="role1" name="vehicle3" value="ACTIVE">
+            <label for="vehicle3"> Active</label><br>
+            <input type="checkbox" id="role2" name="vehicle3" value="INACTIVE">
+            <label for="vehicle3"> Inactive</label><br><br><br></br>
+        </div>
+
+        <p id="demo"></p>
+        <div class="w3-margin-left">
+            <h2 class="w3-large">Terms and Conditions:</h2> <br>
+            <label for="myCheck">You consent to receive communications from us electronically. We will communicate with you by e-mail or phone. You agree that all agreements, notices, disclosures and other communications that we provide to you electronically satisfy any legal requirement that such communications be in writing.</label>  
+                <input type="checkbox" value = "check" id="myCheck" name="test" required>
+            <br><br>
+            <div class="btn-block">
+                <button type="submit" href="StartupHomeMatch.html">Submit</button>
+            </div>
+        </div>
+      </form>
+      </div>
+      <br><br><br><br><br><br><br><br>
+      </div>
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d5 w3-center w3-xlarge">
+  <div class="w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p class="w3-medium">Powered by <a href="http://jumpstartmag.com/" target="_blank" class="w3-hover-text-green">jumpstartmag</a></p>
+</footer>
+</body>
+
+<script>
+    var x = document.getElementById("demo");
+    
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+      } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+    
+    function showPosition(position) {
+      x.innerHTML = "Latitude: " + position.coords.latitude + 
+      "<br>Longitude: " + position.coords.longitude;
+    }
+    
+    function showError(error) {
+      switch(error.code) {
+        case error.PERMISSION_DENIED:
+          x.innerHTML = "User denied the request for Geolocation."
+          break;
+        case error.POSITION_UNAVAILABLE:
+          x.innerHTML = "Location information is unavailable."
+          break;
+        case error.TIMEOUT:
+          x.innerHTML = "The request to get user location timed out."
+          break;
+        case error.UNKNOWN_ERROR:
+          x.innerHTML = "An unknown error occurred."
+          break;
+      }
+    }
+        function toggleState(){
+          var button = document.getElementById("onoffswitch");
+          if (state) {
+                button.innerHTML = "ON";
+                getLocation();
+                x.innerHTML = "Locationa accepted"
+              } else {
+                button.innerHTML = "OFF";
+           }
+           
+        }
+    </script>
+</html>

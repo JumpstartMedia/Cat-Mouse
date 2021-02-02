@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<title>Investor Menu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="morecss/form.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+/* toggle in label designing */ 
+.onoffswitch {
+    position: relative; 
+    width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #34A7C1; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+</style>
+<body class="w3-theme-l5">
+
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+   <a href="InvestorHomeMatch.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Home</a>
+   <a href="InvestorFavorites.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Favorites"><i class="fa fa-star"></i></a>
+   <div class="w3-dropdown-hover w3-hide-small">
+     <a href="InvestorMatch.html">
+     <button class="w3-button w3-padding-large" title="Matches"><i class="fa fa-envelope"></i></button>     
+     <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px"><span class="w3-dropdown-hover w3-black">3</span></a>
+     </div>
+   </div>
+   <a href="InvestorSetting.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Setting"><i class="fa fa-cog"></i></a>
+ 
+   <a href="SignIn.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="Logout"><i class="fa fa-sign-out"></i></a>
+   <a href="InvestorProfile.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+     <img src="images/f.jpg" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+   </a>
+  </div>
+ </div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+</div>
+
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1800px;margin-top:80px">    
+    <!-- The Grid -->
+        <div class="w3-light-grey w3-padding-64 w3-margin-bottom w3-center">
+            <h1 class="w3-jumbo">Additional Information</h1>
+          </div>
+        <div class="w3-dark-grey w3-padding-64 w3-margin-bottom w3-margin-left" style = "margin-left: 10%"> 
+            <h2 class="w3-large w3-margin-left">Fill in these questions to allow investors get a better understanding of your company</h2><br><br>
+        <form class="modal-content" action="InvestorHomeMatch.html">
+        <!-- Item 1: Company Bio-->
+        <div class="w3-medium w3-margin-left">
+          <label for="bio">Bio:<span></span></label><br>
+          <textarea id="bio" name="bio" rows="4" cols="100">Place your bio of your company here.</textarea>
+        </div>
+        <br><br>
+        <!-- Item 2: Company Culture-->
+        <div class="w3-medium w3-margin-left">
+          <label for="bio">Company Culture:<span></span></label><br>
+          <textarea id="bio" name="bio" rows="4" cols="100">Describe your company's startup culture.</textarea>
+        </div>
+        <br><br>
+        <!-- Item 3: Sustainability Angle-->
+        <div class="w3-medium w3-margin-left">
+          <label for="bio">Sustainability Angle:<span></span></label><br>
+          <textarea id="bio" name="bio" rows="4" cols="100">Describe your company's sustainability angle.</textarea>
+        </div>
+        <br><br>
+        <!-- Item 3: Use of funds-->
+        <div class="w3-medium w3-margin-left">
+        <label for="bio">Use of funds:<span></span></label><br>
+          <textarea id="bio" name="bio" rows="4" cols="100">Describe how company will use the funds.</textarea>
+        </div>
+        <br><br>
+        <!-- Item 4: Exterior Ownership (table) -->
+        <div class="w3-medium w3-margin-left">
+          <label for="table">Exterior Ownership:<span></span></label><br>
+            <table width="auto" cellpadding="4" cellspacing="4" name="table">
+              <tr>
+                  <td>Entity Name</td>
+                  <td>Holding %</td>
+                  <td>&nbsp;</td>
+              </tr>
+              <tr>
+                  <td>
+                    <textarea cols="15" rows="1"></textarea>
+                  </td>
+                  <td>
+                    <textarea cols="15" rows="1"></textarea>
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                  <textarea cols="15" rows="1"></textarea>
+                </td>
+                <td>
+                  <textarea cols="15" rows="1"></textarea>
+                </td>
+            </tr>
+        </tr>
+          </table>
+        </div>
+        <br><br>
+        <!-- Item 3: Founding Team (table)-->
+        <div class="w3-medium w3-margin-left">
+          <label for="table">Founding Team:<span></span></label><br>
+          <table width="auto" cellpadding="4" cellspacing="4" name="table">
+          <tr>
+              <td>Name</td>
+              <td>Position</td>
+              <td>Holding %</td>
+              <td>&nbsp;</td>
+          </tr>
+          <tr>
+              <td>
+                <textarea cols="15" rows="1"></textarea>
+              </td>
+              <td>
+                <textarea cols="15" rows="1"></textarea>
+              </td>
+              <td>
+                  <textarea cols="15" rows="1"></textarea>
+              </td>
+          </tr>
+          <tr>
+            <td>
+              <textarea cols="15" rows="1"></textarea>
+            </td>
+            <td>
+              <textarea cols="15" rows="1"></textarea>
+            </td>
+            <td>
+              <textarea cols="15" rows="1"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <textarea cols="15" rows="1"></textarea>
+          </td>
+          <td>
+            <textarea cols="15" rows="1"></textarea>
+          </td>
+          <td>
+            <textarea cols="15" rows="1"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <textarea cols="15" rows="1"></textarea>
+        </td>
+        <td>
+          <textarea cols="15" rows="1"></textarea>
+        </td>
+        <td>
+          <textarea cols="15" rows="1"></textarea>
+      </td>
+    </tr>
+      </table>
+        </div>
+            <div class="btn-block">
+                <button type="submit" href="StartupHomeMatch.html">Submit</button>
+            </div>
+        </div>
+      </form>
+      </div>
+      <br><br><br><br><br><br><br><br>
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d5 w3-center w3-xlarge">
+  <div class="w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p class="w3-medium">Powered by <a href="http://jumpstartmag.com/" target="_blank" class="w3-hover-text-green">jumpstartmag</a></p>
+</footer>
+</body>
+
+<script>
+    var x = document.getElementById("demo");
+    
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+      } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+    
+    function showPosition(position) {
+      x.innerHTML = "Latitude: " + position.coords.latitude + 
+      "<br>Longitude: " + position.coords.longitude;
+    }
+    
+    function showError(error) {
+      switch(error.code) {
+        case error.PERMISSION_DENIED:
+          x.innerHTML = "User denied the request for Geolocation."
+          break;
+        case error.POSITION_UNAVAILABLE:
+          x.innerHTML = "Location information is unavailable."
+          break;
+        case error.TIMEOUT:
+          x.innerHTML = "The request to get user location timed out."
+          break;
+        case error.UNKNOWN_ERROR:
+          x.innerHTML = "An unknown error occurred."
+          break;
+      }
+    }
+        function toggleState(){
+          var button = document.getElementById("onoffswitch");
+          if (state) {
+                button.innerHTML = "ON";
+                getLocation();
+                x.innerHTML = "Locationa accepted"
+              } else {
+                button.innerHTML = "OFF";
+           }
+           
+        }
+    </script>
+</html>

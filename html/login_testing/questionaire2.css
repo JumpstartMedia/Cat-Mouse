@@ -1,0 +1,79 @@
+.radio {
+    list-style-type:none;
+    margin:25px 0 0 0;
+    padding:0;
+}
+
+.radio li {
+    float:left;
+    margin:0 5px 10px 10px;
+   width:150px;
+   height:80px;
+   position:relative;
+}
+
+.radio label, .radio input {
+   display:block;
+   position:absolute;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+   background-color:#EFEFEF;
+   border-radius:4px;
+   border:1px solid #D0D0D0;
+}
+
+.radio input[type="radio"] {
+   opacity:0.011;
+   z-index:100;
+}
+
+.radio input[type="radio"]:checked + label {
+   background:#9228d8;
+}
+
+.radio label {
+    padding:5px;
+    border:1px solid #CCC; 
+    cursor:pointer;
+   z-index:90;
+}
+
+.radio label:hover {
+    background:#9228d8;
+}
+
+#ck-button {
+    margin:4px;
+    background-color:#EFEFEF;
+    border-radius:4px;
+    border:1px solid #D0D0D0;
+    overflow:auto;
+    float:left;
+}
+
+#ck-button:hover {
+    background:#9228d8;
+}
+
+#ck-button label {
+    float:left;
+    width: auto;
+}
+
+#ck-button label span {
+    text-align:center;
+    padding:5px 7px;
+    display:block;
+}
+
+#ck-button label input {
+    position:absolute;
+    top:-20px;
+}
+
+#ck-button input:checked + span {
+    background-color:#9228d8;
+    color:#fff;
+}

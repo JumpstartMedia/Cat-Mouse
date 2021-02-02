@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<title>Startup Menu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="morecss/style5.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    /* The popup form - hidden by default */
+/* The popup form - hidden by default */
+
+.form-popup {
+    display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 99; /* Sit on top */
+	left: 0;
+	right:0;
+	top: 0;
+	bottom:0;
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Add styles to the form container */
+.form-container {
+  margin-left: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-right: 10%;
+  padding: 10px;
+  background-color:white;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+</style>
+<body class="w3-theme-l5">
+
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+   <a href="InvestorHomeMatch.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Home</a>
+   <a href="InvestorFavorites.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Favorites"><i class="fa fa-star"></i></a>
+   <div class="w3-dropdown-hover w3-hide-small">
+     <a href="InvestorMatch.html">
+     <button class="w3-button w3-padding-large" title="Matches"><i class="fa fa-envelope"></i></button>     
+     <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px"><span class="w3-dropdown-hover w3-black">3</span></a>
+     </div>
+   </div>
+   <a href="InvestorSetting.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Setting"><i class="fa fa-cog"></i></a>
+ 
+   <a href="SignIn.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="Logout"><i class="fa fa-sign-out"></i></a>
+   <a href="InvestorProfile.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+     <img src="images/f.jpg" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+   </a>
+  </div>
+ </div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+</div>
+<br><br><br><br>
+<h1 style="font-size: 400%; margin-left: 10%;">What can we help you find today?</h1>
+<div class="w3-container w3-padding-64 w3-center w3-border-blue" id="team" style = "margin-left: 20%; margin-right: 20%;">
+  
+  <div class="w3-row"><br>
+  <div class="w3-quarter">
+    <img src="images/lightbulb.jpg" alt="Boss" style="width:45%; width: 50 px; height: 50 px" class="w3-circle w3-hover-opacity">
+    <a href="#team">
+      <h3 class="w3-hover-shadow"> Matches <i class="fa fa-arrow-circle-o-right w3-hover-shadow"></i></h3>
+    </a>
+    <p>Find and match investors!</p>
+  </div>
+  
+  <div class="w3-quarter">
+    <img src="images/star.jpg" alt="Boss" style="width:45%; width: 50 px; height: 50 px" class="w3-circle w3-hover-opacity">
+    <a href="InvestorFavorites.html">
+      <h3 class="w3-hover-shadow"> Favorites <i class="fa fa-arrow-circle-o-right"></i></h3>
+    </a>
+    <p>Look at your favorite investors</p>
+  </div>
+  
+  <div class="w3-quarter">
+    <img src="images/envelope.jpg" alt="Boss" style="width:45%; width: 50 px; height: 50 px" class="w3-circle w3-hover-opacity">
+    <a href="InvestorMatch.html">
+      <h3 class="w3-hover-shadow"> Notifications <i class="fa fa-arrow-circle-o-right"></i></h3>
+    </a>
+    <p>See if any investors have accepted your request</p>
+  </div>
+  
+  <div class="w3-quarter">
+    <img src="images/profile.png" alt="Boss" style="width:45%; width: 50 px; height: 50 px" class="w3-circle w3-hover-opacity">
+    <a href="InvestorProfile.html">
+      <h3 class="w3-hover-shadow">Account <i class="fa fa-arrow-circle-o-right"></i></h3>
+    </a>
+    <p>Edit your Account</p>
+  </div>
+  
+  </div>
+  </div>
+
+  <h1 style = "position: relative; margin-left: 10%">Based on startups near you</h1>
+  <div class="w3-container w3-padding-32 w3-center" id="team" style = "margin-left: 10%; margin-right: 10%; border-style: solid;">
+
+    <div class="w3-row"><br>
+  
+      <div style = "float:left;width:100%; padding:0 15px; width:33.33%">
+        <img src="images/Uber.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+        <h3 style="margin-left: 0%;">Uber</h3>
+        <p>Up and coming drive-sharing company</p>
+      </div>
+      
+      <div style = "float:left;width:100%; padding:0 15px; width:33.33%">
+        <img src="images/Uber.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+        <h3 style="margin-left: 0%;">Uber</h3>
+        <p>Up and coming drive-sharing company</p>
+      </div>
+      
+      <div style = "float:left;width:100%; padding:0 15px; width:33.33%">
+        <img src="images/Uber.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+        <h3 style="margin-left: 0%;">Uber</h3>
+        <p>Up and coming drive-sharing company</p>
+      </div>
+  </div> 
+</div>
+<br><br>
+<button class="open-button" style = "position: absolute; margin-left: 20%" onclick="openForm()">CLick to Start Matching</button>
+
+
+<br><br><br><br><br><br>
+<h1 style="margin-left: 10%;">Recommended based on your activity</h1>
+<div class="w3-container w3-padding-32 w3-center" id="team" style = "margin-left: 10%; margin-right: 10%; border-style: solid;">
+
+  <div class="w3-row"><br>
+
+    <div style = "float:left;width:100%; padding:0 15px; width:33.33%">
+      <img src="images/Uber.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+      <h3 style="margin-left: 0%;">Uber</h3>
+      <p>Up and coming drive-sharing company</p>
+    </div>
+    
+    <div style = "float:left;width:100%; padding:0 15px; width:33.33%">
+      <img src="images/Uber.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+      <h3 style="margin-left: 0%;">Uber</h3>
+      <p>Up and coming drive-sharing company</p>
+    </div>
+    
+    <div style = "float:left;width:100%; padding:0 15px; width:33.33%">
+      <img src="images/Uber.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+      <h3 style="margin-left: 0%;">Uber</h3>
+      <p>Up and coming drive-sharing company</p>
+    </div>
+</div> 
+</div>
+<br><br>
+<button class="open-button" style = "position: absolute; margin-left: 20%" onclick="openForm()">CLick to Start Matching</button>
+ 
+<div class="form-popup" id="myForm">
+    <div class="form-container">
+        <h1>Matching: </h1>     
+        <h3>Click tick and cross to match. Click favorite to add to favorites</h3>
+        <div class="container">
+            <div class="mySlides">
+              <img src="images/Uber example.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <img src="images/Startup layout.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <img src="images/Uber example.png" style="width:100%">
+            </div>
+              
+            <div class="mySlides">
+              <img src="images/Startup layout.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <img src="images/Uber example.png" style="width:100%">
+            </div>
+              
+            <div class="mySlides">
+              <img src="images/Startup layout.png" style="width:100%">
+            </div>
+              
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+    </div>
+</div>
+<br><br><br><br><br><br><br><br>
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d5 w3-center w3-xlarge">
+  <div class="w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p class="w3-medium">Powered by <a href="http://jumpstartmag.com/" target="_blank" class="w3-hover-text-green">jumpstartmag</a></p>
+</footer>
+</body>
+
+<script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+</html>

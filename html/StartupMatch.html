@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<title>Investor Menu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+</style>
+<body class="w3-theme-l5">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+   <a href="StartupHomeMatch.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Home</a>
+   <a href="StartupFavorites.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Favorites"><i class="fa fa-star"></i></a>
+   <div class="w3-dropdown-hover w3-hide-small">
+     <a href="StartupMatch.html">
+     <button class="w3-button w3-padding-large" title="Matches"><i class="fa fa-envelope"></i></button>     
+     <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px"><span class="w3-dropdown-hover w3-black">3</span></a>
+     </div>
+   </div>
+   <a href="StartupSetting.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Setting"><i class="fa fa-cog"></i></a>
+ 
+   <a href="SignIn.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="Logout"><i class="fa fa-sign-out"></i></a>
+   <a href="StartupProfile.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+     <img src="f.jpg" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+   </a>
+  </div>
+ </div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+</div>
+
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1800px;margin-top:80px">    
+    <!-- The Grid -->
+        <div class="w3-light-grey w3-padding-64 w3-margin-bottom w3-center">
+            <h1 class="w3-jumbo">Matches</h1>
+          </div>
+        <div class="w3-light-grey w3-padding-64 w3-margin-bottom w3-center">
+            <h2 class="w3-large">Pending Requests</h2>
+
+<div style="overflow-x:auto; color: black">
+  <table>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Mobile</th>
+      <th>Email</th>
+      <th>Website</th>
+      <th>Type</th>
+      <th>Location</th>
+      <th>Founded</th>
+      <th>Current Investments</th>
+      <th>Role</th>
+      <th>Reporting Requirement</th>
+      <th>Click to Accept</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td><button onclick="myFunction()"><i class="fa fa-check"></i></button></td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td><button onclick="myFunction()"><i class="fa fa-check"></i></button></td>
+    </tr>
+    <tr>
+      <td>Adam</td>
+      <td>Johnson</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td><button onclick="myFunction()"><i class="fa fa-check"></i></button></td>
+    </tr>
+  </table>
+</div>
+
+<br><br><br><br>
+</div>
+
+<div class="w3-light-grey w3-padding-64 w3-margin-bottom w3-center">
+    <h2 class="w3-large">Accepted Firms</h2>
+
+<div style="overflow-x:auto; color: black;">
+  <table>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Mobile</th>
+      <th>Email</th>
+      <th>Website</th>
+      <th>Type</th>
+      <th>Location</th>
+      <th>Founded</th>
+      <th>Current Investments</th>
+      <th>Role</th>
+      <th>Reporting Requirement</th>
+      <th>Progress</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>Accepted</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>Accepted</td>
+    </tr>
+    <tr>
+      <td>Adam</td>
+      <td>Johnson</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>Accepted</td>
+    </tr>
+  </table>
+</div>
+</div>
+</div>
+<br><br><br><br><br><br><br><br>
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d5 w3-center w3-xlarge">
+  <div class="w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p class="w3-medium">Powered by <a href="http://jumpstartmag.com/" target="_blank" class="w3-hover-text-green">jumpstartmag</a></p>
+</footer>
+</body>
+
+<script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Accepted Requests";
+    }
+    </script>
+</html>

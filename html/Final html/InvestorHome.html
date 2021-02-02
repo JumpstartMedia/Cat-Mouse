@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<title>Investor Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="signin.css">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    /* The popup form - hidden by default */
+/* The popup form - hidden by default */
+
+.form-popup {
+    display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 99; /* Sit on top */
+	left: 0;
+	right:0;
+	top: 0;
+	bottom:0;
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Add styles to the form container */
+.form-container {
+  margin-left: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-right: 10%;
+  padding: 10px;
+  background-color:white;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+</style>
+<body>
+
+
+
+<!-- Navbar -->
+<div class="top">
+  <div class="bar">
+     <a class="baritem"></a>
+     <a class="logodiv" title="Logo">
+         <img src="logo.png" class="logo" alt="Logo">
+       </a>
+   <a href="InvestorHome.html" class="baritem" title="Home"><p class="word">Home<p></a>
+   <a href="InvestorMatch.html" class="baritem" title="Matches"><p class="word">Matches<p></a>
+   <a href="InvestorFavorite.html" class="baritem" title="Favorites"><p class="word">Favorites<p></a>
+   <a href="StartupSetting.html" class="baritem" title="Setting"><p class="word">Setting</p></a>
+   <a href="InvestorAccount.html" class="baritem" title="Myaccount" style = "position: absolute; right: 16%; top: 0%"><p class="word">My Account<p></a>
+    <a href="SignIn.html" class="baritem" style = "position: absolute; right: 10%" title="Logout"><p class="word">Sign out</p></a>
+  </div>
+ </div>
+
+<div class="w3-container" style="background-color: #ffffff; margin-bottom: 5%;"> 
+    <div class="containerx">
+        <h1 class="matchmaking">Matchmaking </h1>
+        <h1 class="matchmaking">for Startups</h1> 
+        <h1 class="matchmaking">and investors</h1>
+        <br>
+        <p style="margin-left:10%">Build a relationship with your startups, and add value from your </p>
+        <p style="margin-left:10%">experience and network.</p>
+        <button class="matchbutton" onclick="openForm()" style="margin-left: 10%; width:36%; margin-top: 5%"><p class="matchword">Get Started</p></button>
+    </div>
+    <div class="containery" style="margin-left: 10%; margin-top: 8%; float: left">
+        <img src="image1.jpg" style="width: 500px; height:500px"></div>
+</div>
+
+
+<br><br>
+
+<div class="container" style="margin-left: 0%; margin-bottom: 5%;">
+  <div class="firstline"> 
+      <h1 style="float: left; font-size: 6vh; font-family: 'Arial Black'; margin-left: 10%; width: 61%">Startups near you</h1>
+      <button type="submit" class="explorebutton" onclick="openForm()"><p class="exploreallword">Explore all <i class="fa fa-arrow-right" style="color: #9228d8; "></i></p></button>
+  </div>
+  <div class="secondline" style="position: relative;">
+    <table style="width:95%;padding:5px 5px;">
+    <tr>
+      <th style="width: 35%;">
+        <img src="salogo.png" style="width: 35%; height: 50%">
+        <div class="para">
+          <h3>Square Ark</h3>
+          <p>An e-commerce platform where brands and</p>
+          <p>ambassadors can connect, collaborate, and</p>
+          <p>explore for new opportunities. </p>
+        </div>
+        <a href="#" class="learnmore" title="gs" onclick="document.getElementById('createstartupaccount').style.display='block'"><p class="getstartedword" style="margin-left:0% !important; font-size: 2vh;">Learn more <i class="fa fa-arrow-right" style="color: #9228d8; "></i></p></a>
+      </th>
+      <th style="width: 35%; text-align: left; margin-top: 20%;">
+        <img src="but.png" style="position: relative;  width: 35%; height: 50%; text-align: left; margin-left: 20%; margin-top: 10%;">
+        <div class="para" style="position: relative; text-align: left; margin-left: 22%;">
+          <h3>Butler</h3>
+          <p>Butler is a monthly subscription that provides</p>
+          <p>professional and personalised home services.</p>
+          <p>At your service, 24 hrs a day and 365 days a year.</p>
+        </div>
+        <a href="#" class="learnmore" title="gs" onclick="document.getElementById('createstartupaccount').style.display='block'"><p class="getstartedword" style="font-size: 2vh; text-align: left; margin-left: 22%;">Learn more <i class="fa fa-arrow-right" style="color: #9228d8; "></i></p></a>
+      </th>
+      <th style="text-align: left; display: block;">
+        <img src="3s.png" style="position: relative;  width: 35%; height: 50%; text-align: left; margin-left: 25%; margin-top: 3%;">
+        <div class="para" style="position: relative; text-align: left; margin-left: 32%;">
+          <h3>3S Global Limited</h3>
+          <p>We are a food & bevarage sourcing company</p>
+          <p>that uses intelligent technology to effective</p>
+          <p>meet all your sourcing needs. </p>
+        </div>
+        <a href="#" class="learnmore" title="gs" onclick="document.getElementById('createstartupaccount').style.display='block'"><p class="getstartedword" style="font-size: 2vh; position: relative; text-align: left; margin-left: 32%;">Learn more <i class="fa fa-arrow-right" style="color: #9228d8; "></i></p></a>
+      </th>
+    </tr>
+  </table>
+  </div>
+</div>
+
+<div class="container" style="margin-left: 0%;">
+  <div class="firstline"> 
+      <h1 style="float: left; font-size: 6vh; font-family: 'Arial Black'; margin-left: 10%; width: 61%">Based on your activity</h1>
+      <button class="explorebutton" onclick="openForm()"><p class="exploreallword">Explore all <i class="fa fa-arrow-right" style="color: #9228d8; "></i></p></button>
+  </div>
+  <div class="secondline" style="position: relative;">
+    <table style="width:95%;padding:5px 0px;">
+    <tr>
+      <th style=" display: block; text-align: left">
+        <img src="kami.png" style="margin-left: 36%; width: 35%; height: 50%; margin-top: 10%">
+        <div class="para">
+          <h3 >Kami Intelligence</h3>
+          <p>Build a Kami Bot for any role or task! Our</p>
+          <p>cutting-edge AI, is easy to use and</p>
+          <p>customizable to your needs</p>
+        </div>
+        <a href="#" class="learnmore" title="gs" onclick="document.getElementById('createstartupaccount').style.display='block'"><p class="getstartedword" style="font-size: 2vh;text-align: left; margin-left: 39%;">Know more <i class="fa fa-arrow-right" style="color: #9228d8; "></i></p></a>
+      </th>
+      <th style="flex-direction: column; text-align: left">
+        <img src="a4alpha.png" style="margin-left: 31%; width: 25%; height: 50%">
+        <div class="para" style="text-align: left; margin-left: 35%">
+          <h3>A4 Alpha</h3>
+          <p>Established in 2019. A4Alpha is the fun-learning </p>
+          <p>tool for sustainable education. </p>
+        </div>
+        <a href="#" class="learnmore" title="gs" onclick="document.getElementById('createstartupaccount').style.display='block'"><p class="getstartedword" style="margin-left:0% !important; font-size: 2vh;">Know more <i class="fa fa-arrow-right" style="color: #9228d8; "></i></p></a>
+      </th>
+      <th style="flex-direction: column; text-align: left">
+        <img src="GOLS.png" style="margin-left: 31%; width: 35%; height: 50%; margin-top: 3%">
+        <div class="para" style="text-align: left; margin-left: 35%">
+          <h3>GOLS</h3>
+          <p>We specialize in developing, managing and </p>
+          <p>aexecuting end-to-end customized solutions to</p>
+          <p>meet your logistic requirements. </p>
+        </div>
+        <a href="#" class="learnmore" title="gs" onclick="document.getElementById('createstartupaccount').style.display='block'"><p class="getstartedword" style="margin-left:35% !important; font-size: 2vh; text-align: left;">Know more <i class="fa fa-arrow-right" style="color: #9228d8; "></i></p></a>
+      </th>
+    </tr>
+  </table>
+  </div>
+</div>
+
+<br><br><br><br><br><br>
+<div class="form-popup" id="myForm">
+  <div class="form-container"  style="margin-top:5%; margin-left: 16%; height:600px; width: 1000px;box-shadow: 5px 5px 5px grey">
+      <div class="container" style="position: absolute;top: 6%; margin-left: 0.7%; box-shadow: 10px 10px 10px grey; max-width: 57%;">
+        <span onclick="document.getElementById('myForm').style.display='none'" class="w3-button w3-xlarge w3-transparent" style="position: absolute; right: 0%;" title="Close Modal">×</span>
+          <div class="mySlides">
+            <img src="images/squareark.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <img src="go.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <img src="images/a4.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides" style="height: 200%">
+            <img src="runout.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <img src="pricing.png" style="height:100%; width: 100%">
+          </div>
+            
+          <a class="next3" onclick="plusSlides(1)" style="font-size: 20px;"></a><!--<i class="fa fa-heart, check, times"></i>-->
+          <a class="next" onclick="plusSlides(1)" style="font-size: 20px;"></a>
+          <a class="next2" onclick="plusSlides(1)" style="font-size: 20px;"></a>
+          <a class="submit" onclick="plusSlides(1)" style="font-size: 20px;"></a>
+      </div>
+  </div>
+</div>
+ <!-- Footer -->
+ <!--
+   <footer class="footer w3-container w3-padding-32 w3-center w3-xlarge">
+<div class="grid-container">
+        <div class="grid-title">Product</div>
+        <div class="grid-title">Company</div>
+        <div class="grid-title">Legal</div>  
+        <div class="grid-title">Follow us</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>  
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>  
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>  
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div> 
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>  
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>     
+      </div>
+      <img src="footer.png" class="footerimage">
+    <p class="w3-medium">Powered by <a href="http://jumpstartmag.com/" target="_blank" class="w3-hover-text-green">jumpstartmag</a></p>
+      </footer>
+ -->
+  <footer style="position: relative; margin-top: 10%;">
+    <img src="foot.png" class="foot" alt="foot" style="display: block;margin-left: auto;margin-right: auto; width: 100%;">
+</footer>
+</body>
+
+<script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+</html>

@@ -1,0 +1,161 @@
+.matchbutton{
+    text-align:left!important;
+    width:100%;
+    width: 12%;
+    text-align:left;
+    padding:0px 48px;
+    font-size: 14px;
+    display:inline-block;
+    border-radius:1em;
+    text-decoration:none;
+    color:#FFFFFF;
+    background-color:#9228d8;
+    text-align:center;
+    border-style: none;
+}
+
+.matchword{
+    color: #FFFFFF;
+    font-size:20 px;
+}
+.matchword:hover{opacity: 50%;}
+
+body {
+    font-family: Arial;
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+   /* Position the image container (needed to position the left and right arrows) */
+   .containerx {
+    position: relative;
+    margin-left: 15%; margin-top: 8%; float: left; width: 500px; 
+
+  }
+  .matchmaking {
+    position: relative;
+    padding: 0px;
+    line-height: 50%;
+    font-size: 400%; margin-left: 10%; margin-top: 15%;
+    font-family: "Arial Black" ;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next, .next2, .next3, .submit {
+    cursor: pointer;
+    position: absolute;
+    top: 95%;
+    width: 100px;
+    height: 100px;
+    padding: 16px;
+    margin-top: -50px;
+    color: none;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 35%;
+    top: 97%;
+    border-radius: 3px 0 0 3px;
+  }
+  .next2 {
+    left: 37%;
+    top: 97%;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .next3 {
+    right: 46%;
+    top: 97%;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .submit {
+    position: absolute;
+    right: 46%;
+    top: 80%;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover
+  .next2:hover
+  .next3:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  .learnmore{
+    text-align: left;
+    text-decoration: none;
+    text-align: center;
+  }
+  .para {
+    text-align-last: left; text-align: center; margin-left: 39%; font-weight: 100;
+  }
+
+  .explorebutton{
+    margin-left: 16%;
+    text-align: left;
+    margin-top: 1%;
+    color: #9228d8;
+    background-color: #FFFFFF;
+    font-weight: 500;
+    border-radius:0.5em;
+    border-color: #9228d8;;
+  }
+
+  .exploreallword:hover{opacity: 50%;}
+  .exploreallword:hover, .getstartedsword:visited, .getstartedsword:link, .getstartedsword:active
+  {
+      text-decoration: none;
+  }
+

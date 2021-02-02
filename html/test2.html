@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<title>Startup Menu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="signin.css">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    /* The popup form - hidden by default */
+/* The popup form - hidden by default */
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.button{
+  display:inline-block;
+  text-decoration:none;
+  color:yellow;
+  font-weight:bold;
+  min-width:132px;
+  min-height:37px;
+  border:1px solid black;
+  border-radius:12px;
+  text-align:center;
+  background-color:gray;
+  box-shadow:8px 8px 8px gray;
+  margin:10px;
+  
+  }
+.button:active{
+  background-color:green;
+position:relative;
+  top:8px;
+  left:8px;
+
+}
+.button:focus{
+    background-color:green;
+position:relative;
+  top:8px;
+  left:8px;
+}
+
+.button2{
+  display:inline-block;
+  text-decoration:none;
+  color:yellow;
+  font-weight:bold;
+  min-width:132px;
+  min-height:37px;
+  border:1px solid black;
+  border-radius:12px;
+  text-align:center;
+  background-color:gray;
+  box-shadow:8px 8px 8px gray;
+  margin:10px;
+  
+  }
+.button2:active{
+  background-color:green;
+position:relative;
+  top:8px;
+  left:8px;
+
+}
+.button2:focus{
+    background-color:green;
+position:relative;
+  top:8px;
+  left:8px;
+}
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+</style>
+<body>
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    
+    [class*="col-"] {
+      float: left;
+      padding: 15px;
+    }
+    
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    .row0 {height:50px;}
+    .row-1 {height: 120px;}
+    .row-2 {height: 200px;}
+    .row-3 {height: 300px;}
+    .row-4 {height: 400px;}
+    .row-5 {height: 500px;}
+    .row-6 {height: 50%;}
+    .row-7 {height: 58.33%;}
+    .row-8 {height: 66.66%;}
+    .row-9 {height: 75%;}
+    .row-10 {height: 83.33%;}
+    .row-11 {height: 91.66%;}
+    .row-12 {height: 100%;}
+    .row-13s {height: 1000px}
+    .row-13 {height: 1200px;}
+    
+    html {
+      font-family: "Lucida Sans", sans-serif;
+    }
+    </style>
+    </head>
+    <body>
+<div class="panel-footer" id="loop">
+    <ul class="post-action">
+         
+                <button class="btn btn-success guess" id="one" value="one" > one</button>
+                <button class="btn btn-success guess" id="two" value="two" > two</button>
+                <button class="btn btn-success guess" id="three" value="three" > three</button>
+         
+    </ul>
+</div>
+    </body>
+    </html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+         $(".guess").click(function(){
+            xyz = this.id
+            console.log(xyz)
+            if(this.clicked){
+                $(this).css('background-color', '#FF8E2B');
+                this.clicked  = false;
+            } else {
+                $(this).css('background-color', '#27AE60');
+                this.clicked  = true;
+            }
+        });
+    </script>
+</html>

@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+    <link rel=stylesheet href = "signin.css">
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="morecss/favorites.css">
+    <style>
+        #myinput {
+    background: linear-gradient(to right, #82CFD0 0%, #82CFD0 50%, #fff 50%, #fff 100%);
+    border: solid 1px #82CFD0;
+    border-radius: 8px;
+    height: 7px;
+    width: 850px;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+  }
+    body{
+        background-color: #ffffff !important;
+        text-decoration: none !important;
+    }
+    html, body, h1, h2, h3, h4, h5, p {font-family: "Manrope"}
+    h1 {
+        font-weight: 800;
+    }
+    </style>
+ 	
+	<title>Signin</title>
+</head>
+<body style="background-color: #ffffff;">
+        <div class="col-11 row-10" style=" margin-left: 5%; margin-top: 5%; margin-bottom:5%; border:3px solid black; ">
+            <h3 style="margin-left:23%; margin-top: 5%; font-size: 30px; ">More information will help us suggest better matches. Could you tell us:</h3>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; font-size: 18px; font-weight: 300;">
+                    1. What is your full name? (firstname, lastname)    
+                </p>
+                <p style= "margin-left:5%; font-size: 10px; font-weight: 100; color: gray">
+                    *required
+                </p>
+                <input type="text" placeholder="Full Name" name="fullname" 
+                    style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                    required/>
+            </div>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    2. What is your position at the company?  
+                </p>
+                <input type="text" class="text" placeholder="Position" name="position" 
+                    style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                    required/> 
+            </div>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    3. What is the name of your company? 
+                </p>
+                <input type="text" class="text" placeholder="Startup" name="startup" 
+                    style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                    required/> 
+            </div>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    4. Upload your logo here:
+                </p>
+                <input type="file" class="custom-file-input" style="margin-left: 5%;">
+            </div>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    5. Where are you based? (Country, City)
+                </p>
+                <p style= "margin-left:5%; font-size: 10px; font-weight: 100; color: gray">
+                    *required
+                </p>
+                <input type="text" class="text" placeholder=" Location" name="l" 
+                    style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                    required/> 
+            </div>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    6.	Which industry are you focused in?
+                </p>
+                <p style= "margin-left:5%; font-size: 10px; font-weight: 100; color: gray">
+                    *required
+                </p>
+                <input type="text" placeholder="Industry" name="Industry"
+                    style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                     required/> 
+            </div>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    7. How long have you been an investor?
+                </p>
+                <p style= "margin-left:5%; font-size: 10px; font-weight: 100; color: gray">
+                    *required
+                </p>
+                <input type="text" placeholder="Founded year" name="f" 
+                    style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                    required/> 
+            </div>
+            <div class="col-12 row-4;">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    8.	Type of investor:
+                </p>
+                <p style= "margin-left:5%; font-size: 10px; font-weight: 100; color: gray">
+                    *required
+                </p>
+                <br>
+                <button class="type" style="font-size: 16px; padding: 15px 45px; float: left; margin-right: 5%; margin-left: 5%" type="button">Insitutional</button>
+                <button class="type" style="font-size: 16px; padding: 15px 45px; float: left; margin-right: 5%; margin-left: 5%" type="button">Angel</button>
+            </div>
+            <div class="col-12 row-4;">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    9. What kind of role do you prefer to take with the startups ?
+                </p>
+                <p style= "margin-left:5%; font-size: 10px; font-weight: 100; color: gray">
+                    *required
+                </p>
+                <br>
+                <button class="series" style="font-size: 16px; padding: 15px 45px; float: left; margin-right: 5%; margin-left: 5%" type="button">Active role where I give advice and mentorship</button>
+                <button class="series" style="font-size: 16px; padding: 15px 45px; float: left; margin-right: 5%; margin-left: 5%" type="button">Silent role, where I sit back, relax, and see my investments grow</button>
+            </div>
+            <div class="col-12 row-0">
+                <div style="margin-left: 5%;">
+                    <p style= "margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                        10. What size of investments are you looking at, per startup?
+                    </p>
+                    <input type="radio" id="a" name="a" value="a">
+                    <label for="y">1 - 100k USD</label><br>
+                    <input type="radio" id="b" name="b" value="b">
+                    <label for="inactive">100-250k USD </label><br>
+                    <input type="radio" id="c" name="c" value="c">
+                    <label for="inactive">350-500K USD</label><br>
+                    <input type="radio" id="d" name="d" value="d">
+                    <label for="inactive">500+K USD</label><br>
+                    <br>
+                </div>
+            </div>
+            <div class="col-12 row-0">
+                <div style="margin-left: 5%;">
+                    <p style= "margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                        10. How often do you want startups to report back?
+                    </p>
+                    <input type="radio" id="a" name="a" value="a">
+                    <label for="y">Every month</label><br>
+                    <input type="radio" id="b" name="b" value="b">
+                    <label for="inactive">Every two months </label><br>
+                    <input type="radio" id="c" name="c" value="c">
+                    <label for="inactive">Every quarter</label><br>
+                    <input type="radio" id="d" name="d" value="d">
+                    <label for="inactive">Every half year</label><br>
+                    <input type="radio" id="e" name="e" value="e">
+                    <label for="inactive">Every year</label><br>
+                    <br>
+                </div>
+            </div>
+            <div class="col-12 row-0">
+                <div style="margin-left: 5%;">
+                    <p style= "margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                        11. What investment timeframe are you looking at, per startup?
+                    </p>
+                    <input type="radio" id="a" name="a" value="a">
+                    <label for="y">Less than 1 yr</label><br>
+                    <input type="radio" id="b" name="b" value="b">
+                    <label for="inactive">1-3 yrs </label><br>
+                    <input type="radio" id="c" name="c" value="c">
+                    <label for="inactive">3-5 yrs</label><br>
+                    <input type="radio" id="d" name="d" value="d">
+                    <label for="inactive">5-10 yrs</label><br>
+                    <input type="radio" id="e" name="e" value="e">
+                    <label for="inactive">10+ yrs</label><br>
+                    <br>
+                </div>
+            </div>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    12.	What is your website where investors can find more information?
+                </p>
+                <p style= "margin-left:5%; font-size: 10px; font-weight: 100; color: gray">
+                    *required
+                </p>
+                <input type="text" placeholder="Paste company url link here" name="website" 
+                    style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                    required/> 
+            </div>
+
+            <div class="col-12 row-2">
+                <a href="InvestorQuestionaire2.html">
+                    <button type="submit" style="margin-top: 5%; padding: 10px 20px; position: relative; border-radius: 10px; background-color: #1ebdc8; margin-left: 45%; width:10%; color: white; border-style: none;"  class="signupbtn">
+                    Next Step</button>
+                </a>
+            </div>
+        </div>
+ </body>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        document.getElementById("myinput").oninput = function() {
+  this.style.background = 'linear-gradient(to right, #82CFD0 0%, #82CFD0 ' + this.value + '%, #fff ' + this.value + '%, white 100%)'
+};
+         $(".guess").click(function(){
+            xyz = this.id
+            console.log(xyz)
+            if(this.clicked){
+                $(this).css('background-color', '#f8f8f8');
+                $(this).css('color', 'black');
+                this.clicked  = false;
+            } else {
+                $(this).css('background-color', '#1ebdc8');
+                this.clicked  = true;
+            }
+        });
+        var count = 1;
+        function setColor(btn, color) {
+            var property = document.getElementById(btn);
+            if (count == 0) {
+                property.style.backgroundColor = "#FFFFFF"
+                count = 1;        
+            }
+            else {
+                property.style.borderColor = "#1ebdc8;"
+                count = 0;
+            }
+        }
+    </script>
+</html>
+

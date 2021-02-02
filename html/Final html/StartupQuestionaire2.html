@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+    <link rel=stylesheet href = "signin.css">
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="morecss/favorites.css">
+
+ 	
+	<title>Signin</title>
+</head>
+<body style="background-color: #ffffff;">
+        <div class="col-11 row-11" style=" margin-left: 5%; margin-top: 5%; margin-bottom: 5%; border: 3px solid black; ">
+            <h3 style="margin-left: 12%; margin-top: 5%; margin-bottom: 5%">A robust profile will help you get more accurate connections. Give us some more information below:</h3>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    1. Describe what your company does and why it's awesome
+                </p>
+                <textarea id="text" name="bio" rows="4" cols="145" style="margin-left:5%; border-radius: 10px; border-width: 2px; 
+                border-color: lightgrey; background-color: white; color: darkgrey;" placeholder="Bio"></textarea> 
+            </div>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    2. Attach your pitch deck
+                </p>
+                <input type="file" class="custom-file-input" style="margin-left: 5%;">
+                <!--blah-->
+            </div>
+            <div class="col-12 row-0">
+                <div style="margin-left: 5%;">
+                    <p style= "margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                        3.	Do you have a UNSDG focus or angle?
+                    </p>
+                    <input type="radio" id="y" name="y" value="y">
+                    <label for="y">Yes</label><br>
+                    <input type="radio" id="n" name="n" value="n">
+                    <label for="inactive">No </label><br>
+                    <br>
+                </div>
+                <textarea id="text" name="unsdg" rows="4" cols="145" style="margin-left:5%; border-radius: 10px; border-width: 2px; 
+                border-color: lightgrey; background-color: white; color: darkgrey;" placeholder="Sustainability Angle"></textarea> 
+            </div>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    4. How will you use the funds?
+                </p>
+                <textarea id="text" name="funds" rows="4" cols="145" style="margin-left:5%; border-radius: 10px; border-width: 2px; 
+                border-color: lightgrey; background-color: white; color: darkgrey;" placeholder=""></textarea> 
+            </div>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    5. Current Shareholders: (Name, Company and Ownersip)
+                </p>
+                <textarea id="text" name="shareholders" rows="4" cols="145" style="margin-left:5%; border-radius: 10px; border-width: 2px; 
+                border-color: lightgrey; background-color: white; color: darkgrey;" placeholder="e.g. -John Doe, Jumpstart, 5%"></textarea> 
+            </div>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    6. Are there any company highlights you would like to emphasize?
+                </p>
+                <textarea id="text" name="ai" rows="4" cols="145" style="margin-left:5%; border-radius: 10px; border-width: 2px; 
+                border-color: lightgrey; background-color: white; color: darkgrey;" placeholder=""></textarea> 
+            </div>
+            <div class="col-12 row-7">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    7. Founding team:
+                </p>
+                <div class="col-3 row-6" style="border-color: white; border-style: solid; margin-left: 0%">
+                    <div style= "margin-left:15%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                        <p>Image:</p>
+                        <input type="file" class="custom-file-input">
+                        <br><br>
+                        <p style= "margin-left:0%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                            Name:
+                         </p>
+                         <input type="text" placeholder="" name="name" 
+                         style="margin-left: 0%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                         required/> 
+                         <p style= "margin-left:0%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                             Position:
+                          </p>
+                          <input type="text" placeholder="" name="position" 
+                         style="margin-left: 0%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                         required/> 
+                          <p style= "margin-left:0%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                             Description or bio:
+                          </p>
+                          <input type="text" placeholder="" name="description or bio" 
+                         style="margin-left: 0%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                         /> 
+                    </div>
+                </div>
+                <div class="col-3 row-7" style="border-color: white; border-style: solid; margin-left: 11%">
+                    <div style= "margin-left:15%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                        <p>Image:</p>
+                        <input type="file" class="custom-file-input">
+                        <br><br>
+                        <p style= "margin-left:0%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                            Name:
+                         </p>
+                         <input type="text" placeholder="" name="name" 
+                         style="margin-left: 0%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                         required/> 
+                         <p style= "margin-left:0%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                             Position:
+                          </p>
+                          <input type="text" placeholder="" name="position" 
+                         style="margin-left: 0%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                         required/> 
+                          <p style= "margin-left:0%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                             Description or bio:
+                          </p>
+                          <input type="text" placeholder="" name="description or bio" 
+                         style="margin-left: 0%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                         /> 
+                    </div>
+                </div>
+                <div class="col-3 row-7" style="border-color: white; border-style: solid; margin-left: 11%">
+                    <div style= "margin-left:15%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                        <p>Image:</p>
+                        <input type="file" class="custom-file-input">
+                        <br><br>
+                        <p style= "margin-left:0%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                            Name:
+                         </p>
+                         <input type="text" placeholder="" name="name" 
+                         style="margin-left: 0%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                         required/> 
+                         <p style= "margin-left:0%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                             Position:
+                          </p>
+                          <input type="text" placeholder="" name="position" 
+                         style="margin-left: 0%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                         required/> 
+                          <p style= "margin-left:0%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                             Description or bio:
+                          </p>
+                          <input type="text" placeholder="" name="description or bio" 
+                         style="margin-left: 0%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                         /> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 row-1">
+                <p style= "margin-left: 5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    8. Number of Exits by Founding Team
+                </p>
+                <input type="text" placeholder="" name="exits" 
+                    style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                    />
+            </div>
+
+            <div class="col-12 row-1" style="margin-left: 5%">
+                <p style= "margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    9. Profitability
+                </p>
+                <input type="radio" id="traction" name="traction" value="traction">
+                <label for="traction">Traction but no revenue</label><br>
+                <input type="radio" id="revenue" name="revenue" value="revenue">
+                <label for="revenue">Revenue </label><br>
+                <input type="radio" id="breakeven" name="breakeven" value="breakeven">
+                <label for="breakeven">Break even </label><br>
+                <input type="radio" id="profitable" name="profitable" value="profitable">
+                <label for="profitable">Profitable </label><br>
+                <input type="radio" id="other" name="other" value="other">
+                <label for="other">Other </label><br>
+            </div>
+            <div class="col-12 row-2">
+                <a href="StartupQuestionaire3.html">
+                    <button type="submit" style="margin-top: 5%; padding: 10px 20px; position: relative; border-radius: 10px; background-color: #1ebdc8; margin-left: 43%; width:10%; color: white; border-style: none;"  class="signupbtn">
+                    Next Step</button>
+                </a>
+            </div>
+        </div>
+ </body>
+ </html>

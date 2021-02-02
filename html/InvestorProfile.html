@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<title>Investor Menu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+</style>
+<body class="w3-theme-l5">
+
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+   <a href="InvestorHomeMatch.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Home</a>
+   <a href="InvestorFavorites.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Favorites"><i class="fa fa-star"></i></a>
+   <div class="w3-dropdown-hover w3-hide-small">
+     <a href="InvestorMatch.html">
+     <button class="w3-button w3-padding-large" title="Matches"><i class="fa fa-envelope"></i></button>     
+     <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px"><span class="w3-dropdown-hover w3-black">3</span></a>
+     </div>
+   </div>
+   <a href="InvestorSetting.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Setting"><i class="fa fa-cog"></i></a>
+ 
+   <a href="SignIn.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="Logout"><i class="fa fa-sign-out"></i></a>
+   <a href="InvestorProfile.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+     <img src="images/f.jpg" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+   </a>
+  </div>
+ </div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+</div>
+
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m3">
+      <!-- Profile -->
+      <div class="w3-card w3-round w3-white">
+        <div class="w3-container">
+         <h4 class="w3-center">Investor Profile</h4>
+         <p class="w3-center"><img src="images/g.png" class="w3-circle" style="height:106px;width:106px" alt="Logo"></p>
+         <hr>
+         <p><i class="fa fa-industry fa-fw w3-margin-right w3-text-theme"></i> Type</p>
+         <p><i class="fa fa-location-arrow fa-fw w3-margin-right w3-text-theme"></i> Location</p>
+         <p><i class="fa fa-calendar fa-fw w3-margin-right w3-text-theme"></i> Founded</p>
+         <i class="fa fa-external-link fa-fw w3-margin-right w3-text-theme"></i><a href = "http://jumpstartmag.com"> Website </a>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Accordion -->
+      <div class="w3-card w3-round">
+        <div class="w3-white">
+          <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-tags fa-fw w3-margin-right"></i> My Interests</button>
+          <div id="Demo1" class="w3-hide w3-container">
+            <p>
+                <span class="w3-tag w3-small w3-theme-d5">News</span>
+                <span class="w3-tag w3-small w3-theme-d4">W3Schools</span>
+                <span class="w3-tag w3-small w3-theme-d3">Labels</span>
+                <span class="w3-tag w3-small w3-theme-d2">Games</span>
+                <span class="w3-tag w3-small w3-theme-d1">Friends</span>
+                <span class="w3-tag w3-small w3-theme">Games</span>
+                <span class="w3-tag w3-small w3-theme-l1">Friends</span>
+                <span class="w3-tag w3-small w3-theme-l2">Food</span>
+                <span class="w3-tag w3-small w3-theme-l3">Design</span>
+                <span class="w3-tag w3-small w3-theme-l4">Art</span>
+                <span class="w3-tag w3-small w3-theme-l5">Photos</span>
+              </p>
+          </div>
+          <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
+          <div id="Demo2" class="w3-hide w3-container">
+            <p>Meeting with Blah on Blah</p>
+          </div>
+          <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button>
+          <div id="Demo3" class="w3-hide w3-container">
+         <div class="w3-row-padding">
+         <br>
+           <div class="w3-half">
+             <img src="images/1.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="images/2.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="images/3.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="images/4.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="images/5.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="images/6.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+         </div>
+         <button class="w3-center w3-button w3-padding-large w3-black w3-small" title="Upload"><i class="fa fa-upload"></i><p>Upload Picture</p></button>
+          </div>
+        </div>      
+      </div>
+      <br>
+      
+      <!-- Alert Box -->
+      <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
+          <i class="fa fa-remove"></i>
+        </span>
+        <p><strong>Hey!</strong></p>
+        <p>Find startups to invest in. Help invest in a better future for humanity.</p>
+      </div>
+    
+    <!-- End Left Column -->
+    </div>
+    
+    <!-- Middle Column -->
+    <div class="w3-col m7">
+    
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card w3-round w3-white">
+            <div class="w3-container w3-large w3-padding">
+              <h6 class="w3-opacity">Bio: </h6>
+              <p> blah blah blah</p>
+              <button type="button" class="w3-button w3-theme w3-right w3-cell-top"><i class="fa fa-pencil"></i> Edit</button> 
+            </div>
+            <!--<p contenteditable="true" class="w3-border w3-padding"></p> Enter info</p> -->
+          </div>
+        </div>
+      </div>
+
+      <br></br><br></br>
+
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card w3-round w3-white">
+            <div class="w3-container w3-large w3-padding">
+              <h6 class="w3-opacity">Bio: </h6>
+              <p> blah blah blah</p>
+              <button type="button" class="w3-button w3-theme w3-right w3-cell-top"><i class="fa fa-pencil"></i> Edit</button> 
+            </div>
+            <!--<p contenteditable="true" class="w3-border w3-padding"></p> Enter info</p> -->
+          </div>
+        </div>
+      </div>
+
+      <br></br><br></br>
+
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card w3-round w3-white">
+            <div class="w3-container w3-large w3-padding">
+              <h6 class="w3-opacity">Bio: </h6>
+              <p> blah blah blah</p>
+              <button type="button" class="w3-button w3-theme w3-right w3-cell-top"><i class="fa fa-pencil"></i> Edit</button> 
+            </div>
+            <!--<p contenteditable="true" class="w3-border w3-padding"></p> Enter info</p> -->
+          </div>
+        </div>
+      </div>
+
+      <br></br><br></br>
+
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card w3-round w3-white">
+            <div class="w3-container w3-large w3-padding">
+              <h6 class="w3-opacity">Bio: </h6>
+              <p> blah blah blah</p>
+              <button type="button" class="w3-button w3-theme w3-right w3-cell-top"><i class="fa fa-pencil"></i> Edit</button> 
+            </div>
+            <!--<p contenteditable="true" class="w3-border w3-padding"></p> Enter info</p> -->
+          </div>
+        </div>
+      </div>
+      
+      
+    <!-- End Middle Column -->
+    </div>
+    
+    <!-- Right Column -->
+    <div class="w3-col m2">
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Upcoming Events:</p>
+          <img src="images/1.jpg" alt="Startup A" style="width:100%;">
+          <p><strong>Meeting with startup A</strong></p>
+          <p>Friday 15:00</p>
+          <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
+        </div>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Matches</p>
+          <img src="images/g.png" alt="Logo" style="width:50%"><br>
+          <span>Popular Startup</span>
+          <div class="w3-row w3-opacity">
+              <button class="w3-button w3-block w3-green w3-section" title="Click to See More!"><i class="fa fa-click"></i><a href="StartupDesign.html">Click to See More!</a></button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      
+      
+      <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
+        <p><i class="fa fa-bug w3-xxlarge"></i></p>
+        <p> APply to AdD ADS!</p>
+      </div>
+      
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+<!-- End Page Container -->
+</div>
+<br>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d5 w3-center w3-xlarge">
+    <div class="w3-section">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <p class="w3-medium">Powered by <a href="http://jumpstartmag.com/" target="_blank" class="w3-hover-text-green">jumpstartmag</a></p>
+  </footer>
+ 
+<script>
+// Accordion
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme-d1";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme-d1", "");
+  }
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html> 

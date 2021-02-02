@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<title>Startup Menu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Resource style -->
+<style>
+    * {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+    /* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+
+
+body {
+    height: 100vh;
+}
+
+</style>
+<body class="w3-theme-l5">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+   <a href="InvestorHomeMatch.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Home</a>
+   <a href="InvestorFavorites.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Favorites"><i class="fa fa-star"></i></a>
+   <div class="w3-dropdown-hover w3-hide-small">
+     <a href="InvestorMatch.html">
+     <button class="w3-button w3-padding-large" title="Matches"><i class="fa fa-envelope"></i></button>     
+     <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px"><span class="w3-dropdown-hover w3-black">3</span></a>
+     </div>
+   </div>
+   <a href="InvestorSetting.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Setting"><i class="fa fa-cog"></i></a>
+ 
+   <a href="SignIn.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="Logout"><i class="fa fa-sign-out"></i></a>
+   <a href="InvestorProfile.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+     <img src="images/f.jpg" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+   </a>
+  </div>
+ </div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+</div>
+<div class="w3-container w3-content" style="max-width:2000px; margin-top:80px; overflow: scroll;">    
+    <!-- The Grid -->
+    <div class="w3-row">
+      <!-- Left Column -->
+      <div class="w3-col m3" style = "margin: 0%; max-height: 90vh; overflow: scroll;">
+        <!-- Profile -->
+        <div class="demo cursor w3-card w3-round w3-white" onclick="currentSlide(1)">
+          <div class="w3-container">
+           <h4 class="w3-center">Startup Profile</h4>
+           <p class="w3-center"><img src="images/g.png" class="w3-circle" style="height:106px;width:106px" alt="Logo"></p>
+           <hr>
+           <p><i class="fa fa-industry fa-fw w3-text-theme"></i> Industry</p>
+           <p><i class="fa fa-location-arrow fa-fw w3-margin-right w3-text-theme"></i> Location</p>
+           <p><i class="fa fa-calendar fa-fw w3-margin-right w3-text-theme"></i> Founded</p>
+           <i class="fa fa-external-link fa-fw w3-margin-right w3-text-theme"></i><a href = "http://jumpstartmag.com"> Product Website </a>
+          </div>
+        </div>
+        <br><br>
+        <!-- Profile 2 -->
+        <div class="demo cursor w3-card w3-round w3-white" onclick="currentSlide(2)">
+            <div class="w3-container">
+             <h4 class="w3-center">Startup Profile</h4>
+             <p class="w3-center"><img src="images/4.jpg" class="w3-circle" style="height:106px;width:106px" alt="Logo"></p>
+             <hr>
+             <p><i class="fa fa-industry fa-fw w3-text-theme"></i> Industry</p>
+             <p><i class="fa fa-location-arrow fa-fw w3-margin-right w3-text-theme"></i> Location</p>
+             <p><i class="fa fa-calendar fa-fw w3-margin-right w3-text-theme"></i> Founded</p>
+             <i class="fa fa-external-link fa-fw w3-margin-right w3-text-theme"></i><a href = "http://jumpstartmag.com"> Product Website </a>
+            </div>
+          </div>
+        <br><br>
+        <!-- Profile 3 -->
+        <div class="demo cursor w3-card w3-round w3-white" onclick="currentSlide(3)">
+            <div class="w3-container">
+             <h4 class="w3-center">Startup Profile</h4>
+             <p class="w3-center"><img src="images/3.jpg" class="w3-circle" style="height:106px;width:106px" alt="Logo"></p>
+             <hr>
+             <p><i class="fa fa-industry fa-fw w3-text-theme"></i> Industry</p>
+             <p><i class="fa fa-location-arrow fa-fw w3-margin-right w3-text-theme"></i> Location</p>
+             <p><i class="fa fa-calendar fa-fw w3-margin-right w3-text-theme"></i> Founded</p>
+             <i class="fa fa-external-link fa-fw w3-margin-right w3-text-theme"></i><a href = "http://jumpstartmag.com"> Product Website </a>
+            </div>
+          </div>
+        <br><br>
+        <!-- Profile 4 -->
+        <div class="demo cursor w3-card w3-round w3-white" onclick="currentSlide(4)">
+            <div class="w3-container">
+             <h4 class="w3-center">Startup Profile</h4>
+             <p class="w3-center"><img src="images/2.jpg" class="w3-circle" style="height:106px;width:106px" alt="Logo"></p>
+             <hr>
+             <p><i class="fa fa-industry fa-fw w3-text-theme"></i> Industry</p>
+             <p><i class="fa fa-location-arrow fa-fw w3-margin-right w3-text-theme"></i> Location</p>
+             <p><i class="fa fa-calendar fa-fw w3-margin-right w3-text-theme"></i> Founded</p>
+             <i class="fa fa-external-link fa-fw w3-margin-right w3-text-theme"></i><a href = "http://jumpstartmag.com"> Product Website </a>
+            </div>
+          </div>
+        <br><br>
+        <!-- Profile 5 -->
+        <div class="demo cursor w3-card w3-round w3-white" onclick="currentSlide(5)">
+            <div class="w3-container">
+             <h4 class="w3-center">Startup Profile</h4>
+             <p class="w3-center"><img src="images/1.jpg" class="w3-circle" style="height:106px;width:106px" alt="Logo"></p>
+             <hr>
+             <p><i class="fa fa-industry fa-fw w3-text-theme"></i> Industry</p>
+             <p><i class="fa fa-location-arrow fa-fw w3-margin-right w3-text-theme"></i> Location</p>
+             <p><i class="fa fa-calendar fa-fw w3-margin-right w3-text-theme"></i> Founded</p>
+             <i class="fa fa-external-link fa-fw w3-margin-right w3-text-theme"></i><a href = "http://jumpstartmag.com"> Product Website </a>
+            </div>
+          </div>
+        <br><br>
+        </div>
+        <div class = "w3-col m1"><br><br></div> 
+        <div class = "w3-col m7" style="max-height: 90vh; overflow-y: scroll;">
+            <div class="mySlides">
+                <div class="numbertext"></div>
+                <img src="images/page1.jpg" style="width:100%">
+                <img src="images/page1.jpg" style="width:100%">
+                <img src="images/page1.jpg" style="width:100%">
+                <img src="images/page1.jpg" style="width:100%">
+                <img src="images/page1.jpg" style="width:100%">
+
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext"></div>
+                <img src="images/page2.jpg" style="width:100%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext"></div>
+                <img src="images/page3.jpg" style="width:100%; display: flex; align-items: center; justify-content: center;">
+                    <div class="ValuationCalculator" style = "position: absolute; padding: 5%;
+                    width: 55%;
+                     margin-top: 3%; background-color: white;">
+                    <h1>Scorecard</h1>
+                    <p>Slide to see your custom startup valuation.</p>
+                    <div class="w3-row">
+                        <!-- Row 1 -->
+                        <div class="w3-col m2">
+                            Risk Type
+                        </div>
+                        <div class="w3-col m3">
+                            Weight (1-10)
+                        </div>
+                        <div class="w3-col m5">
+                            Compared to Others
+                        </div>
+                        <div class="w3-col m2">
+                            Value 1-10
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="w3-row">
+                        <!-- Row 2 -->
+                        <div class="w3-col m2">
+                            Product
+                        </div>
+                        <div class="w3-col m3">
+                            Weight: <input type="number" id="num1">
+                        </div>
+                        <div class="w3-col m5">
+                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" style = "width: 90%"> 
+                        </div>
+                        <div class="w3-col m2">
+                          <input type="range" name="ageInputName" id="ageInputId" value="24" min="1" max="100" oninput="ageOutputId.value = ageInputId.value">
+                          <output name="ageOutputName" id="ageOutputId">24</output>
+                    </div>
+                    <br><br>
+                    <div class="w3-row">
+                        <!-- Row 3 -->
+                        <div class="w3-col m2">
+                            Market
+                        </div>
+                        <div class="w3-col m3">
+                            Weight: <input type="number" id="num1">
+                        </div>
+                        <div class="w3-col m5">
+                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" style = "width: 90%"> 
+                        </div>
+                        <div class="w3-col m2">
+                            Value: <span id="demo"></span>
+                            <script>
+                                var slider = document.getElementById("myRange");
+                                var output = document.getElementById("demo");
+                                output.innerHTML = slider.value; // Display the default slider value
+                    
+                                // Update the current slider value (each time you drag the slider handle)
+                                slider.oninput = function() {
+                                output.innerHTML = this.value;
+                            }
+                              </script>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="w3-row">
+                        <!-- Row 4 -->
+                        <div class="w3-col m2">
+                            Competition
+                        </div>
+                        <div class="w3-col m3">
+                            Weight: <input type="number" id="num1">
+                        </div>
+                        <div class="w3-col m5">
+                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" style = "width: 90%"> 
+                        </div>
+                        <div class="w3-col m2">
+                            Value: <span id="demo"></span>
+                            <script>
+                                var slider = document.getElementById("myRange");
+                                var output = document.getElementById("demo");
+                                output.innerHTML = slider.value; // Display the default slider value
+                    
+                                // Update the current slider value (each time you drag the slider handle)
+                                slider.oninput = function() {
+                                output.innerHTML = this.value;
+                            }
+                              </script>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="w3-row">
+                        <!-- Row 5 -->
+                        <div class="w3-col m2">
+                            Team
+                        </div>
+                        <div class="w3-col m3">
+                            Weight: <input type="number" id="num1">
+                        </div>
+                        <div class="w3-col m5">
+                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" style = "width: 90%"> 
+                        </div>
+                        <div class="w3-col m2">
+                            Value: <span id="demo"></span>
+                            <script>
+                                var slider = document.getElementById("myRange");
+                                var output = document.getElementById("demo");
+                                output.innerHTML = slider.value; // Display the default slider value
+                    
+                                // Update the current slider value (each time you drag the slider handle)
+                                slider.oninput = function() {
+                                output.innerHTML = this.value;
+                            }
+                              </script>
+                        </div>
+                    </div>
+                    <br><br><br><br>
+                    <div class="w3-row">
+                        <div class="w3-col m2">
+                            Total Valuation: 
+                        </div>
+                        <div class="w3-col m3">
+                            <input type="text" id="total" style = "width: 80%">
+                        </div>
+                        <div class="w3-col m3">
+                            <button type="button">Submit!</button>
+                        </div>
+                    </div>
+                    </div>
+                    
+              </div>   
+              <div class="mySlides">
+                <div class="numbertext"></div>
+                <img src="images/page1.jpg" style="width:100%">
+                <img src="images/page1.jpg" style="width:100%">
+                <img src="images/vpage1.jpg" style="width:100%">
+                <img src="images/page1.jpg" style="width:100%">
+                <img src="images/page1.jpg" style="width:100%">
+
+              </div>
+              <div class="mySlides">
+                <div class="numbertext"></div>
+                <img src="images/page2.jpg" style="width:100%">
+                <img src="images/page3.jpg" style="width:100%">
+              </div>    
+              </div>
+                
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d5 w3-center w3-xlarge">
+  <div class="w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p class="w3-medium">Powered by <a href="http://jumpstartmag.com/" target="_blank" class="w3-hover-text-green">jumpstartmag</a></p>
+</footer>
+
+  </body>
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+  </html>

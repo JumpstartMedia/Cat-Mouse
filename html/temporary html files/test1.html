@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        span.x {
+            display: table-cell; /* the default for span */
+            padding: 1px;
+            border: 1px solid red;  
+            width: 400px;
+        }
+
+          span.a {
+            display: table-cell; /* the default for span */
+            padding: 1px;
+            border: 1px solid red;  
+            width: 400px;
+        }
+
+        span.b {
+            display: table-cell; /* the default for span */
+            padding: 1px;
+            border: 1px solid red;  
+            width: 400px;
+        }
+
+        span.c {
+            display: table-cell; /* the default for span */
+            padding: 1px;
+            border: 1px solid red;  
+            width: 400px;
+        }
+
+        span.d {
+            display: table-cell; /* the default for span */
+            padding: 1px;
+            border: 1px solid red;  
+            width: 400px;
+        }
+
+        span.s {
+            display: table-cell; /* the default for span */
+            padding: 1px;
+            border: 3px solid blue;  
+            width: 400 px;
+        }
+    </style>
+  <title>Project</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="Name">
+        <h1>Scorecard</h1>
+        <p>Slide to see your custom startup valuation.</p>
+      </div>
+    <div class="Relative valuation">
+         Input relative startup valuation (number): <input type="number" id="userName"> 
+		 
+        <button  onclick="display()">Add Info</button>
+
+        <p id="printhere"></p>
+
+       <script>
+            function display(){
+
+            //Assigning the variable to the user input
+                var userName = document.getElementById("userName").value;
+
+            // to print the input here
+            document.getElementById("printhere").innerHTML = userName;
+            }
+        </script>
+    </div>
+    <div class="column"> 
+        <span class = "x">
+            <p>
+                Risk Type
+            </p>
+        </span>
+        <span class = "x">
+            <p>
+                Weight (1-10)
+            </p>
+        </span>
+        <span class = "x">
+            <p>
+                Compared to others
+            </p>
+        </span>
+        <span class = "x">
+            <p>
+                Value 1 - 10
+            </p>
+        </span>
+    </div>
+    <div class="slidecontainer">
+        <span class = "a">
+            <label for="num1">Product
+                </label>
+            </span>
+        <span class = "a">
+            Weight: <input type="number" id="num1">
+        </span>
+        <span class = "a">
+            <p>
+                <pre> </pre>
+            </p>
+        </span>
+        <span class = "a">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </span> 
+        <p>Value: <span id="demo"></span></p>
+        </p>
+          <script>
+            var slider = document.getElementById("myRange");
+            var output = document.getElementById("demo");
+            output.innerHTML = slider.value; // Display the default slider value
+
+            // Update the current slider value (each time you drag the slider handle)
+            slider.oninput = function() {
+            output.innerHTML = this.value;
+        }
+          </script>
+    </div>
+
+    <div class="slidecontainer">
+        <br> </br>
+        <br> </br>
+        <span class = "b">
+            <label for="num1">Market
+                </label>
+            </span>
+        <span class = "b">
+            Weight: <input type="number" id="num1>
+        </span>
+        <span class = "b">
+            <p>
+                <pre> </pre>
+            </p>
+        </span>
+        <span class = "b">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange2">
+        </span> 
+        <p>Value: <span id="demo2"></span></p>
+        </p>
+          <script>
+            var slider = document.getElementById("myRange2");
+            var output2 = document.getElementById("demo2");
+            output.innerHTML = slider.value; // Display the default slider value
+
+            // Update the current slider value (each time you drag the slider handle)
+            slider.oninput = function() {
+            output2.innerHTML = this.value;
+        }
+          </script>
+    </div>
+
+    <div class="slidecontainer">
+        <br> </br>
+        <br> </br>
+        <span class = "c">
+            <label for="num1">Competition
+                </label>
+            </span>
+        <span class = "c">
+            Weight: <input type="number" id="num1>
+        </span>
+        <span class = "c">
+            <p>
+                <pre> </pre>
+            </p>
+        </span>
+        <span class = "b">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange3">
+        </span> 
+        <p>Value: <span id="demo3"></span></p>
+        </p>
+          <script>
+            var slider = document.getElementById("myRange3");
+            var output3 = document.getElementById("demo3");
+            output.innerHTML = slider.value; // Display the default slider value
+
+            // Update the current slider value (each time you drag the slider handle)
+            slider.oninput = function() {
+            output3.innerHTML = this.value;
+        }
+          </script>
+    </div>
+
+
+    <div class="slidecontainer">
+        <br> </br>
+        <br> </br>
+        <span class = "d">
+            <label for="num1">Team
+                </label>
+            </span>
+        <span class = "c">
+            Weight: <input type="number" id="num1>
+        </span>
+        <span class = "d">
+            <p>
+                <pre> </pre>
+            </p>
+        </span>
+        <span class = "d">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange4">
+        </span> 
+        <p>Value: <span id="demo4"></span></p>
+        </p>
+          <script>
+            var slider = document.getElementById("myRange4");
+            var output4 = document.getElementById("demo4");
+            output.innerHTML = slider.value; // Display the default slider value
+
+            // Update the current slider value (each time you drag the slider handle)
+            slider.oninput = function() {
+            output4.innerHTML = this.value;
+        }
+          </script>
+    </div>
+
+    <div class = "submit">
+        <span class =  "s">
+            <p> Total Valuation </p>
+            </span>
+        <span class =  "s">
+            1<input type="text" id="total>
+        </span>
+        <span class =  "s">
+            <button type="button">Submit!</button>
+        </span>
+
+      </div>
+  </body>
+  </html>
+  

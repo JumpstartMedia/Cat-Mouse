@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="morecss/favorites.css">
+    <style>
+    html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+    </style>
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>Favorites</title>
+</head>
+<body class="w3-theme-l5">
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="InvestorHomeMatch.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Home</a>
+  <a href="InvestorFavorites.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Favorites"><i class="fa fa-star"></i></a>
+  <div class="w3-dropdown-hover w3-hide-small">
+    <a href="InvestorMatch.html">
+    <button class="w3-button w3-padding-large" title="Matches"><i class="fa fa-envelope"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px"><span class="w3-dropdown-hover w3-black">3</span></a>
+    </div>
+  </div>
+  <a href="InvestorSetting.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Setting"><i class="fa fa-cog"></i></a>
+
+  <a href="SignIn.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="Logout"><i class="fa fa-sign-out"></i></a>
+  <a href="InvestorProfile.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+    <img src="images/f.jpg" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+  </a>
+ </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+</div>
+	<header class="cd-header">
+		<h1>Favorites</h1>
+	</header>
+
+	<main class="cd-main-content">
+		<div class="cd-tab-filter-wrapper">
+			<div class="cd-tab-filter">
+				<ul class="cd-filters">
+					<li class="placeholder"> 
+						<a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+					</li> 
+					<li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
+					<li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Fashion</a></li>
+					<li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Tech</a></li>
+				</ul> <!-- cd-filters -->
+			</div> <!-- cd-tab-filter -->
+		</div> <!-- cd-tab-filter-wrapper -->
+
+		<section class="cd-gallery">
+			<ul>
+                <li class="mix color-1 check1 radio2 option3 cursor demo">
+                    <div class="container">
+                        <img src="images/1.jpg" alt="1" class="image">
+                        <div class="overlay" style="overflow: scroll; background-color: darkgray" >
+                          <div class="text" style="padding: 2%; max-width: 95%">
+							  <h1>Uber</h1>
+							  <p><strong>Location:</strong> San Francisco <br>
+								<strong>Industry:</strong> Transportation<br>
+								<strong>Founded:</strong> March 2009 <br>
+								<strong>Founders:</strong> Garrett Camp, Travis Kalanick <br>
+								<strong>Products:</strong> Mobile app, website (Link to Uber app, link to uber.com) <br>
+								<strong>Services:</strong> Vehicle for hire, FOod Delivery, Courier, Freight transport <br>
+								<strong>Website:</strong> uber.com <br>
+								<strong>Bio:</strong> Uber Technologies, Inc., commonly known as Uber, is an American company that offers vehicles for hire, food delivery (Uber Eats), package delivery, couriers, freight transportation, and, through a partnership with Lime, electric bicycle and motorized scooter rental. The company is based in San Francisco and has operations in over 900 metropolitan areas worldwide. It is one of the largest providers in the gig economy and is also a pioneer in the development of self-driving cars.
+								</p>
+						  </div>
+                        </div>
+                      </div>
+                </li>
+                <li class="mix color-2 check2 radio2 option2">
+                    <div class="container">
+                        <img src="images/2.jpg" alt="2" class="image">
+                        <div class="overlay">
+                          <div class="text">Hello World</div>
+                        </div>
+                      </div>
+                </li>
+                <li class="mix color-1 check3 radio3 option1">
+                    <div class="container">
+                        <img src="images/3.jpg" alt="3" class="image">
+                        <div class="overlay">
+                          <div class="text">Hello World</div>
+                        </div>
+                      </div>
+                </li>
+                <li class="mix color-2 check2 radio2 option1">
+                    <div class="container">
+                        <img src="images/4.jpg" alt="4" class="image">
+                        <div class="overlay">
+                          <div class="text">Hello World</div>
+                        </div>
+                      </div>
+                </li>
+                <li class="mix color-1 check3 radio2 option4">
+                    <div class="container">
+                        <img src="images/5.jpg" alt="5" class="image">
+                        <div class="overlay">
+                          <div class="text">Hello World</div>
+                        </div>
+                      </div>
+                </li>
+                <li class="mix color-2 check1 radio2 option3">
+                    <div class="container">
+                        <img src="images/6.jpg" alt="6" class="image">
+                        <div class="overlay">
+                          <div class="text">Hello World</div>
+                        </div>
+                      </div>
+                </li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+			</ul>
+			<div class="cd-fail-message">No results found</div>
+        </section> <!-- cd-gallery -->
+        
+		<div class="cd-filter">
+			<form>
+				<div class="cd-filter-block">
+					<h4>Search</h4>
+					
+					<div class="cd-filter-content">
+						<input type="search" placeholder="Enter something">
+					</div> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+				<div class="cd-filter-block">
+					<h4>Size of Startup</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
+			    			<label class="checkbox-label" for="checkbox1">Small</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
+							<label class="checkbox-label" for="checkbox2">Medium</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
+							<label class="checkbox-label" for="checkbox3">Large</label>
+						</li>
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+				<div class="cd-filter-block">
+					<h4>Location</h4>
+					
+					<div class="cd-filter-content">
+						<div class="cd-select cd-filters">
+							<select class="filter" name="selectThis" id="selectThis">
+								<option value="">Choose a location</option>
+								<option value=".option1">Hong Kong</option>
+								<option value=".option2">China</option>
+								<option value=".option3">Japan</option>
+								<option value=".option4">Korea</option>
+							</select>
+						</div> <!-- cd-select -->
+					</div> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+				<div class="cd-filter-block">
+					<h4>Type of Investment </h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
+							<label class="radio-label" for="radio1">All</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
+							<label class="radio-label" for="radio2">Development investment</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="radio3">
+							<label class="radio-label" for="radio3">Expansion investment</label>
+						</li>
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+			</form>
+
+			<a href="#0" class="cd-close">Close</a>
+		</div> <!-- cd-filter -->
+
+		<a href="#0" class="cd-filter-trigger">Filters</a>
+	</main> <!-- cd-main-content -->
+
+	<br><br><br><br><br><br><br><br>
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d5 w3-center w3-xlarge">
+  <div class="w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p class="w3-medium">Powered by <a href="http://jumpstartmag.com/" target="_blank" class="w3-hover-text-green">jumpstartmag</a></p>
+</footer>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mixitup.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+    
+</body>
+</html>

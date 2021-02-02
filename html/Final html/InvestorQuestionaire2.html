@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+    <link rel=stylesheet href = "signin.css">
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="morecss/favorites.css">
+    <style>
+        #myinput {
+    background: linear-gradient(to right, #82CFD0 0%, #82CFD0 50%, #fff 50%, #fff 100%);
+    border: solid 1px #82CFD0;
+    border-radius: 8px;
+    height: 7px;
+    width: 850px;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+  }
+    body{
+        background-color: #ffffff !important;
+        text-decoration: none !important;
+    }
+    html, body, h1, h2, h3, h4, h5, p {font-family: "Manrope"}
+    h1 {
+        font-weight: 800;
+    }
+    </style>
+ 	
+	<title>Signin</title>
+</head>
+<body style="background-color: #ffffff;">
+        <div class="col-11 row-10" style=" margin-left: 5%; margin-top: 5%; margin-bottom:5%; border:3px solid black; ">
+            <h3 style="margin-left:25%; margin-top: 5%; font-size: 30px; ">A robust profile also helps startups understand you better.</h3>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; font-size: 18px; font-weight: 300;">
+                    1. Please include a bio  
+                </p>
+                <textarea id="text" name="bio" rows="4" cols="145" style="margin-left:5%; border-radius: 10px; border-width: 2px; 
+                border-color: lightgrey; background-color: white; color: darkgrey;" placeholder="Bio"></textarea> 
+            </div>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; font-size: 18px; font-weight: 300;">
+                    2. Preference: Please describe the type of startups you’re interested in
+                </p>
+                <textarea id="text" name="ai" rows="4" cols="145" style="margin-left:5%; border-radius: 10px; border-width: 2px; 
+                border-color: lightgrey; background-color: white; color: darkgrey;" placeholder=""></textarea> 
+            </div>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    3.	Please include an image for your profile 
+                </p>
+                <input type="file" name="image" class="custom-file-input" style="margin-left: 5%;">
+            </div>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; font-size: 18px; font-weight: 300;">
+                    4.	Previous investments:
+                </p>
+                <textarea id="text" name="previous" rows="4" cols="145" style="margin-left:5%; border-radius: 10px; border-width: 2px; 
+                border-color: lightgrey; background-color: white; color: darkgrey;" placeholder="e.g. Name of Company, Ownership"></textarea> 
+            </div>
+            <div class="col-12 row-4" style="margin-left: 5%">
+                <p style= "font-size: 18px; font-weight: 300; margin-bottom: 2%">
+                    5.	Which industry are you interested in investing in?
+                </p>
+                <ul class="post-action">
+                    <button class="tag btn-success guess" id="one" value="one" ><p style="color: black;">Telecommunication</p></button>
+                    <button class="tag btn-success guess" id="two" value="two" ><p style="color: black;">Automation</p></button>
+                    <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">IOT</p></button>
+                    <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">IOT</p></button>
+                    <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">IOT</p></button>
+                    <br><br>
+                    <button class="tag btn-success guess" id="one" value="one" ><p style="color: black;">AR/VR</p></button>
+                    <button class="tag btn-success guess" id="two" value="two" ><p style="color: black;">Transportation</p></button>
+                    <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">Education</p></button>
+                    <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">IOT</p></button>
+                    <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">IOT</p></button>
+                    <br><br>
+                    <button class="tag btn-success guess" id="one" value="one" ><p style="color: black;">Renewable Energy</p></button>
+                    <button class="tag btn-success guess" id="two" value="two" ><p style="color: black;">Healthcare</p></button>
+                    <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">Consumer goods</p></button>
+                    <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">IOT</p></button>
+                    <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">IOT</p></button>
+                    <br><br>
+                    <button class="tag btn-success guess" id="one" value="one" ><p style="color: black;">Services</p></button>
+                    <button class="tag btn-success guess" id="two" value="two" ><p style="color: black;">Fintech/p></button>
+                    <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">Media</p></button>
+                    <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">IOT</p></button>
+                    <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">IOT</p></button>
+                    <br><br>
+                  </ul>
+            </div>
+            <div class="col-12 row-4" style="margin-left: 5%">
+                <p style= "font-size: 18px; font-weight: 300; margin-bottom: 2%">
+                    6.	What stage and series are you interested in?
+                </p>
+                <ul class="post-action">
+                    <button class="tag btn-success guess" id="one" value="one" ><p style="color: black;">Telecommunication</p></button>
+                    <button class="tag btn-success guess" id="two" value="two" ><p style="color: black;">Automation</p></button>
+                    <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">IOT</p></button>
+                    <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">IOT</p></button>
+                    <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">IOT</p></button>
+                    <br><br>
+                    <button class="tag btn-success guess" id="one" value="one" ><p style="color: black;">AR/VR</p></button>
+                    <button class="tag btn-success guess" id="two" value="two" ><p style="color: black;">Transportation</p></button>
+                    <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">Education</p></button>
+                    <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">IOT</p></button>
+                    <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">IOT</p></button>
+                    <br><br>
+                    <button class="tag btn-success guess" id="one" value="one" ><p style="color: black;">Renewable Energy</p></button>
+                    <button class="tag btn-success guess" id="two" value="two" ><p style="color: black;">Healthcare</p></button>
+                    <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">Consumer goods</p></button>
+                    <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">IOT</p></button>
+                    <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">IOT</p></button>
+                    <br><br>
+                    <button class="tag btn-success guess" id="one" value="one" ><p style="color: black;">Services</p></button>
+                    <button class="tag btn-success guess" id="two" value="two" ><p style="color: black;">Fintech/p></button>
+                    <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">Media</p></button>
+                    <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">IOT</p></button>
+                    <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">IOT</p></button>
+                    <br><br>
+                  </ul>
+            </div>
+            
+            <div class="col-12 row-0" style="margin-left: 5%">
+                <p style= "margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    7.	Do you prefer teams with an UNSDG focus?
+                </p>
+                    <input type="radio" id="a" name="a" value="a">
+                    <label for="y">Yes</label><br>
+                    <input type="radio" id="b" name="b" value="b">
+                    <label for="inactive">No </label><br>
+            </div>
+
+            <div class="col-12 row-2">
+                <a href="InvestorHome.html">
+                    <button type="submit" style="margin-top: 5%; padding: 10px 20px; position: relative; border-radius: 10px; background-color: #1ebdc8; margin-left: 43%; width:10%; color: white; border-style: none;"  class="signupbtn">
+                    Submit</button>
+                </a>
+            </div>
+        </div>
+ </body>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        document.getElementById("myinput").oninput = function() {
+  this.style.background = 'linear-gradient(to right, #82CFD0 0%, #82CFD0 ' + this.value + '%, #fff ' + this.value + '%, white 100%)'
+};
+         $(".guess").click(function(){
+            xyz = this.id
+            console.log(xyz)
+            if(this.clicked){
+                $(this).css('background-color', '#f8f8f8');
+                $(this).css('color', 'black');
+                this.clicked  = false;
+            } else {
+                $(this).css('background-color', '#1ebdc8');
+                this.clicked  = true;
+            }
+        });
+        var count = 1;
+        function setColor(btn, color) {
+            var property = document.getElementById(btn);
+            if (count == 0) {
+                property.style.backgroundColor = "#FFFFFF"
+                count = 1;        
+            }
+            else {
+                property.style.borderColor = "#1ebdc8;"
+                count = 0;
+            }
+        }
+    </script>
+</html>
+

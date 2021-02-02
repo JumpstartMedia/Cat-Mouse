@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+    <link rel=stylesheet href = "signin.css">
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="morecss/favorites.css">
+    <style>
+        #myinput {
+    background: linear-gradient(to right, #82CFD0 0%, #82CFD0 50%, #fff 50%, #fff 100%);
+    border: solid 1px #82CFD0;
+    border-radius: 8px;
+    height: 7px;
+    width: 850px;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+  }
+    body{
+        background-color: #ffffff !important;
+        text-decoration: none !important;
+    }
+    html, body, h1, h2, h3, h4, h5, p {font-family: "Manrope"}
+    h1 {
+        font-weight: 800;
+    }
+    </style>
+ 	
+	<title>Signin</title>
+</head>
+<body style="background-color: #ffffff;">
+        <div class="col-11 row-10" style=" margin-left: 5%; margin-top: 5%; margin-bottom:5%; border:3px solid black; ">
+            <h3 style="margin-left:39%; margin-top: 5%; font-size: 30px; ">Fill in the details to get started!</h3>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; font-size: 18px; font-weight: 300;">
+                    1. What is your full name? (firstname, lastname)    
+                </p>
+                <p style= "margin-left:5%; font-size: 10px; font-weight: 100; color: gray">
+                    *required
+                </p>
+                <input type="text" placeholder="Full Name" name="fullname" 
+                    style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                    required/>
+            </div>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    2. What is your position at the company?  
+                </p>
+                <p style= "margin-left:5%; font-size: 10px; font-weight: 100; color: gray">
+                    *required
+                </p>
+                <input type="text" class="text" placeholder="Position" name="position" 
+                    style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                    required/> 
+            </div>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    3. What is the name of your startup? 
+                </p>
+                <p style= "margin-left:5%; font-size: 10px; font-weight: 100; color: gray">
+                    *required
+                </p>
+                <input type="text" class="text" placeholder="Startup" name="startup" 
+                    style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                    required/> 
+            </div>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    4. Upload your logo here:
+                </p>
+                <p style= "margin-left:5%; font-size: 10px; font-weight: 100; color: gray">
+                    *required
+                </p>
+                <input type="file" class="custom-file-input" style="margin-left: 5%;">
+            </div>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    5. Where is your startup located? (Country, City)
+                </p>
+                <p style= "margin-left:5%; font-size: 10px; font-weight: 100; color: gray">
+                    *required
+                </p>
+                <input type="text" class="text" placeholder=" Location" name="l" 
+                    style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                    required/> 
+            </div>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    6.	Which industry are you focused in?
+                </p>
+                <p style= "margin-left:5%; font-size: 10px; font-weight: 100; color: gray">
+                    *required
+                </p>
+                <input type="text" placeholder="Industry" name="Industry"
+                    style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                     required/> 
+            </div>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    7.	What year was your startup founded?
+                </p>
+                <p style= "margin-left:5%; font-size: 10px; font-weight: 100; color: gray">
+                    *required
+                </p>
+                <input type="text" placeholder="Founded year" name="f" 
+                    style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                    required/> 
+            </div>
+            <div class="col-10 row-4;">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    8. What stage is your startup at?
+                </p>
+                <p style= "margin-left:5%; font-size: 10px; font-weight: 100; color: gray">
+                    *required
+                </p>
+                <br>
+                <div class="chrome" style= "margin-left:5%;">
+                  <input id="myinput" type="range" value="50" />
+                  <br>
+                  <p style="float:left; margin-right: 15%">Idea Stage</p>
+                  <p style="float:left; margin-right: 15%">Development Stage</p>
+                  <p style="float:left; margin-right: 15%">Startup Stage</p>
+                  <p style="float:left;">Expansion Stage</p>
+                </div>
+            </div>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    9.	How much have you raised so far?
+                </p>
+                <p style= "margin-left:5%; font-size: 10px; font-weight: 100; color: gray">
+                    *required
+                </p>
+                <input type="text" placeholder="Total value in USD" name="raised" 
+                    style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                    required/> 
+            </div>
+            <div class="col-12 row-4;">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    10.	I am raising my series
+                </p>
+                <p style= "margin-left:5%; font-size: 10px; font-weight: 100; color: gray">
+                    *required
+                </p>
+                <br>
+                <button class="series" style="font-size: 16px; padding: 15px 45px; float: left; margin-right: 5%; margin-left: 5%" type="button">Friends and Family</button>
+                <button class="series" style="font-size: 16px; padding: 15px 45px; float: left; margin-right: 5%; margin-left: 5%" type="button">Seed</button>
+                <button class="series" style="font-size: 16px; padding: 15px 45px; float: left; margin-right: 5%; margin-left: 5%" type="button">A</button>
+                <button class="series"  type="button" style="font-size: 16px; padding: 15px 45px; float: left; margin-right: 5%; margin-left: 5%">B</button>
+                <button class="series" type="button" style="font-size: 16px; padding: 15px 45px; float: left; margin-right: 5%; margin-left: 5%">C</button>
+            </div>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    11.	How much are you looking to raise now? 
+                </p>
+                <p style= "margin-left:5%; font-size: 10px; font-weight: 100; color: gray">
+                    *required
+                </p>
+                <input type="text" placeholder="Total value in USD" name="raisenow" 
+                    style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                    required/> 
+            </div>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    12.	How much are you looking to raise now? 
+                </p>
+                <p style= "margin-left:5%; font-size: 10px; font-weight: 100; color: gray">
+                    *required
+                </p>
+                <input type="text" placeholder="Total value in USD" name="raisenow" 
+                    style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                    required/> 
+            </div>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    13.	In return for the investment, what size of the pie would the investor(s) would get?
+                </p>
+                <p style= "margin-left:5%; font-size: 10px; font-weight: 100; color: gray">
+                    *required
+                </p>
+                <input type="text" placeholder="XX% (0-100)" name="pie" 
+                    style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                    required/> 
+            </div>
+            <div class="col-12 row-0">
+                <p style= "margin-left:5%; margin-bottom:1%; font-size: 18px; font-weight: 300;">
+                    14.	What is your website where investors can find more information?
+                </p>
+                <p style= "margin-left:5%; font-size: 10px; font-weight: 100; color: gray">
+                    *required
+                </p>
+                <input type="text" placeholder="Paste company url link here" name="website" 
+                    style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                    required/> 
+            </div>
+
+            <div class="col-12 row-2">
+                <a href="StartupQuestionaire2.html">
+                    <button type="submit" style="margin-top: 5%; padding: 10px 20px; position: relative; border-radius: 10px; background-color: #1ebdc8; margin-left: 43%; width:10%; color: white; border-style: none;"  class="signupbtn">
+                    Next Step</button>
+                </a>
+            </div>
+        </div>
+ </body>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        document.getElementById("myinput").oninput = function() {
+  this.style.background = 'linear-gradient(to right, #82CFD0 0%, #82CFD0 ' + this.value + '%, #fff ' + this.value + '%, white 100%)'
+};
+         $(".guess").click(function(){
+            xyz = this.id
+            console.log(xyz)
+            if(this.clicked){
+                $(this).css('background-color', '#f8f8f8');
+                $(this).css('color', 'black');
+                this.clicked  = false;
+            } else {
+                $(this).css('background-color', '#1ebdc8');
+                this.clicked  = true;
+            }
+        });
+        var count = 1;
+        function setColor(btn, color) {
+            var property = document.getElementById(btn);
+            if (count == 0) {
+                property.style.backgroundColor = "#FFFFFF"
+                count = 1;        
+            }
+            else {
+                property.style.borderColor = "#1ebdc8;"
+                count = 0;
+            }
+        }
+    </script>
+</html>
+

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<title>Startup Menu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="signin.css">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    /* The popup form - hidden by default */
+/* The popup form - hidden by default */
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.imagetop{
+    height: 100px;
+    width: auto;
+    border-radius: 0 0 7% 7%;
+    padding: 0;
+    border-color: lightblue;
+    border-style:solid;
+    background-color:lightblue !important;
+}
+input[type=number] {
+  width: 20%;
+  border-style: none;
+  background-color:  white;
+  color:#9228d8;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    color:#9228d8;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #367ebd;
+}
+
+.range-field input[type=range]::-moz-range-thumb{background:#AA0029;}
+
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+</style>
+<body>
+
+
+
+<!-- Navbar -->
+<div class="top">
+    <div class="bar">
+       <a class="baritem"></a>
+       <a class="logodiv" title="Logo">
+           <img src="logo.png" class="logo" alt="Logo">
+         </a>
+     <a href="InvestorHome.html" class="baritem" title="Home"><p class="word">Home<p></a>
+     <a href="InvestorMatch.html" class="baritem" title="Matches"><p class="word">Matches<p></a>
+     <a href="InvestorFavorite.html" class="baritem" title="Favorites"><p class="word">Favorites<p></a>
+     <a href="StartupSetting.html" class="baritem" title="Setting"><p class="word">Setting</p></a>
+     <a href="InvestorAccount.html" class="baritem" title="Myaccount" style = "position: absolute; right: 16%; top: 0%"><p class="word">My Account<p></a>
+      <a href="SignIn.html" class="baritem" style = "position: absolute; right: 10%" title="Logout"><p class="word">Sign out</p></a>
+    </div>
+   </div>
+
+<div class="w3-container w3-content" style="max-width:2000px; margin-top:80px; overflow: scroll;">    
+    <!-- The Grid -->
+    <div class="w3-row">
+      <!-- Left Column -->
+      <div class="w3-col m3" style = "margin-top: 2%; margin-left: 5%; max-height: 150vh; overflow: scroll;">
+        <!-- Profile -->
+        <div class="demo cursor" onclick="currentSlide(1)">
+            <img src="byteimg.png" alt="profile" style="border-radius: 5% 5% 0 0;; display: block;margin-left: 0;margin-right: 0; margin-top: 0; width: 100%">
+            <div class="imagetop"> 
+                <div style="width: 30%; height: 30%; float:left; height:100px;">
+                    <img src="salogo.png" alt="profile" style="display: block;margin-left: auto;margin-right: auto; width: 100%;">
+                    </div>
+                <div style="width: 50%; float:left; height:100px; margin-top: 5%; line-height: 70%;">
+                        <h3>Squareark</h3>
+                        <p>Ecommerce</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!-- Profile 2 -->
+        <div class="demo cursor" onclick="currentSlide(2)">
+            <img src="byteimg.png" alt="profile" style="border-radius: 5% 5% 0 0;; display: block;margin-left: 0;margin-right: 0; margin-top: 0; width: 100%">
+            <div class="imagetop"> 
+                <div style="width: 30%; height: 30%; float:left; height:100px;">
+                    <img src="salogo.png" alt="profile" style="display: block;margin-left: auto;margin-right: auto; width: 100%;">
+                    </div>
+                <div style="width: 50%; float:left; height:100px; margin-top: 5%; line-height: 70%;">
+                        <h3>Squareark</h3>
+                        <p>Ecommerce</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="demo cursor" onclick="currentSlide(3)">
+            <img src="byteimg.png" alt="profile" style="border-radius: 5% 5% 0 0;; display: block;margin-left: 0;margin-right: 0; margin-top: 0; width: 100%">
+            <div class="imagetop"> 
+                <div style="width: 30%; height: 30%; float:left; height:100px;">
+                    <img src="salogo.png" alt="profile" style="display: block;margin-left: auto;margin-right: auto; width: 100%;">
+                    </div>
+                <div style="width: 50%; float:left; height:100px; margin-top: 5%; line-height: 70%;">
+                        <h3>Squareark</h3>
+                        <p>Ecommerce</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class = "w3-col m1"><br><br></div> 
+        <div class = "w3-col m7" style="margin-left: 5%; max-height: 150vh; height: 200vh; overflow: scroll; margin-right: 5%;">
+            <div class="mySlides">
+                <div class="numbertext" style="background-color:lightblue; border-radius: 5%; padding:0px 5px;">
+                    <!--grid-->
+                    <table style="width:95%; border-collapse:separate; margin-left: 8%;
+                    border-spacing:3em;">
+                        <tr>
+                            <th>
+                                <div style="width: 300px; height: 300px; background-color: #ffffff;
+                                -webkit-box-shadow: 0 0 5px 2px darkgray; background-color: #FFFFFF;
+          -moz-box-shadow: 0 0 5px 2px darkgray;
+          box-shadow: 0 0 5px 2px darkgray;">
+                                    <img src="doc1.png" style="width:95%; height: 85%">
+                                </div>
+                            </th>
+                            <th>
+                                <div style="width: 300px; height: 300px; background-color: #ffffff;
+                                -webkit-box-shadow: 0 0 5px 2px darkgray; background-color: #FFFFFF;
+          -moz-box-shadow: 0 0 5px 2px darkgray;
+          box-shadow: 0 0 5px 2px darkgray;">
+                                    <img src="doc2.png" style="width:95%; height: 85%">
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div style="width: 300px; height: 300px; background-color: #ffffff;
+                                -webkit-box-shadow: 0 0 5px 2px darkgray; background-color: #FFFFFF;
+          -moz-box-shadow: 0 0 5px 2px darkgray;
+          box-shadow: 0 0 5px 2px darkgray;">
+                                    <img src="doc3.png" style="width:95%; height: 85%">
+                                </div>
+                            </th>
+                            <th>
+                                <div style="width: 300px; height: 300px; background-color: #ffffff;
+                                -webkit-box-shadow: 0 0 5px 2px darkgray; background-color: #FFFFFF;
+          -moz-box-shadow: 0 0 5px 2px darkgray;
+          box-shadow: 0 0 5px 2px darkgray;">
+                                    <img src="doc4.png" style="width:95%; height: 85%">
+                                </div>
+                            </th>
+                        </tr>
+                    </table>
+                    <div style="margin-left: 10%; margin-right: 5%; margin-top: 0%;">
+                    <h1>Scorecard</h1>
+                    <p>Slide to see your custom startup valuation.</p>
+                    <div class="w3-row">
+                        <!-- Row 1 -->
+                        <div class="w3-col m2">
+                            Risk Type
+                        </div>
+                        <div class="w3-col m3">
+                            Weight (1-10)
+                        </div>
+                        <div class="w3-col m5">
+                            Compared to Others
+                        </div>
+                        <div class="w3-col m2">
+                            Value 1-10
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="w3-row">
+                        <!-- Row 2 -->
+                        <div class="w3-col m2">
+                            Product
+                        </div>
+                        <div class="w3-col m3">
+                            <input type="number" id="num1" placement="100">
+                        </div>
+                        <form>
+                            <div class="w3-col m5">
+                                <input type="range" name="ageInputName" id="ageInputId" value="24" min="1" max="100" oninput="ageOutputId.value = ageInputId.value">
+                        </div>
+                        <div class="w3-col m2">
+                            <output name="ageOutputName" id="ageOutputId" style="color: #9228d8">24</output>
+                        </div>
+                        </form>
+                    </div>
+                    <br><br>
+                    <div class="w3-row">
+                        <!-- Row 3 -->
+                        <div class="w3-col m2">
+                            Market
+                        </div>
+                        <div class="w3-col m3">
+                            <input type="number" id="num1">
+                        </div>
+                        <form>
+                            <div class="w3-col m5">
+                                <input type="range" name="ageInputName" id="ageInputId" value="24" min="1" max="100" oninput="ageOutputId.value = ageInputId.value">
+                        </div>
+                        <div class="w3-col m2">
+                            <output name="ageOutputName" id="ageOutputId" style="color: #9228d8">24</output>
+                        </div>
+                        </form>
+                    </div>
+                    <br><br>
+                    <div class="w3-row">
+                        <!-- Row 4 -->
+                        <div class="w3-col m2">
+                            Competition
+                        </div>
+                        <div class="w3-col m3">
+                             <input type="number" id="num1">
+                        </div>
+                        <form>
+                            <div class="w3-col m5">
+                                <input type="range" name="ageInputName" id="ageInputId" value="24" min="1" max="100" oninput="ageOutputId.value = ageInputId.value">
+                        </div>
+                        <div class="w3-col m2">
+                            <output name="ageOutputName" id="ageOutputId" style="color: #9228d8">24</output>
+                        </div>
+                        </form>
+                    </div>
+                    <br><br>
+                    <div class="w3-row">
+                        <!-- Row 5 -->
+                        <div class="w3-col m2">
+                            Team
+                        </div>
+                        <div class="w3-col m3">
+                            <input type="number" id="num5">
+                        </div>
+                        <form>
+                            <div class="w3-col m5">
+                                <input type="range" name="ageInputName" id="ageInputId" value="24" min="1" max="100" oninput="ageOutputId.value = ageInputId.value">
+                        </div>
+                        <div class="w3-col m2">
+                            <output name="ageOutputName" id="ageOutputId" style="color: #9228d8">24</output>
+                        </div>
+                        </form>
+                        <br><br><br>
+                    <div class="w3-row">
+                        <div class="w3-col m2">
+                            Total Valuation: 
+                        </div>
+                        <div class="w3-col m3">
+                            <input type="number" id="total" style = "width: 80%">
+                        </div>
+                        <div class="w3-col m3">
+                            <button class="gsbutton" type="button">Submit!</button>
+                        </div>
+                        <br><br><br><br>
+                    </div>
+                </div>
+            </div>
+
+              </div>
+            </div>
+            
+              <div class="mySlides">
+                <div class="numbertext"></div>
+                <img src="images/page2.jpg" style="width:100%">
+                <img src="images/page2.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext" style="background-color:lightblue; border-radius: 5%; padding:0px 5px;">
+                    <!--grid-->
+                    <table style="width:95%; border-collapse:separate; margin-left: 8%;
+                    border-spacing:3em;">
+                        <tr>
+                            <th>
+                                <div style="width: 300px; height: 300px; border-color: black; border-style: solid;">
+                                    <img src="doc1.png" style="width:50%; height: 50%">
+                                </div>
+                            </th>
+                            <th>
+                                <div style="width: 300px; height: 300px; border-color: black; border-style: solid;">
+                                    <img src="doc2.png" style="width:50%; height: 50%">
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div style="width: 300px; height: 300px; border-color: black; border-style: solid;">
+                                    <img src="doc3.png" style="width:50%; height: 50%">
+                                </div>
+                            </th>
+                            <th>
+                                <div style="width: 300px; height: 300px; border-color: black; border-style: solid;">
+                                    <img src="doc4.png" style="width:50%; height: 50%">
+                                </div>
+                            </th>
+                        </tr>
+                    </table>
+                    <div style="margin-left: 10%; margin-right: 5%; margin-top: 0%;">
+                    <h1>Scorecard</h1>
+                    <p>Slide to see your custom startup valuation.</p>
+                    <div class="w3-row">
+                        <!-- Row 1 -->
+                        <div class="w3-col m2">
+                            Risk Type
+                        </div>
+                        <div class="w3-col m3">
+                            Weight (1-10)
+                        </div>
+                        <div class="w3-col m5">
+                            Compared to Others
+                        </div>
+                        <div class="w3-col m2">
+                            Value 1-10
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="w3-row">
+                        <!-- Row 2 -->
+                        <div class="w3-col m2">
+                            Product
+                        </div>
+                        <div class="w3-col m3">
+                            <input type="number" id="num1">
+                        </div>
+                        <div class="w3-col m5">
+                        </div>
+                        <div class="w3-col m2">
+                            <input type="range" name="ageInputName" id="ageInputId" value="24" min="1" max="100" oninput="ageOutputId.value = ageInputId.value">
+    <output name="ageOutputName" id="ageOutputId">24</output>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="w3-row">
+                        <!-- Row 3 -->
+                        <div class="w3-col m2">
+                            Market
+                        </div>
+                        <div class="w3-col m3">
+                            <input type="number" id="num1">
+                        </div>
+                        <div class="w3-col m5">
+                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange3" style = "width: 90%"> 
+                        </div>
+                        <div class="w3-col m2">
+                            <span id="demo"></span>
+                            <script>
+                                var slider = document.getElementById("myRange");
+                                var output = document.getElementById("demo");
+                                output.innerHTML = slider.value; // Display the default slider value
+                    
+                                // Update the current slider value (each time you drag the slider handle)
+                                slider.oninput = function() {
+                                output.innerHTML = this.value;
+                            }
+                              </script>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="w3-row">
+                        <!-- Row 4 -->
+                        <div class="w3-col m2">
+                            Competition
+                        </div>
+                        <div class="w3-col m3">
+                             <input type="number" id="num1">
+                        </div>
+                        <div class="w3-col m5">
+                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange4" style = "width: 90%"> 
+                        </div>
+                        <div class="w3-col m2">
+                            <span id="demo"></span>
+                            <script>
+                                var slider = document.getElementById("myRange");
+                                var output = document.getElementById("demo");
+                                output.innerHTML = slider.value; // Display the default slider value
+                    
+                                // Update the current slider value (each time you drag the slider handle)
+                                slider.oninput = function() {
+                                output.innerHTML = this.value;
+                            }
+                              </script>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="w3-row">
+                        <!-- Row 5 -->
+                        <div class="w3-col m2">
+                            Team
+                        </div>
+                        <div class="w3-col m3">
+                            <input type="number" id="num5">
+                        </div>
+                        <div class="w3-col m5">
+                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" style = "width: 90%"> 
+                        </div>
+                        <div class="w3-col m2">
+                            <span id="demo"></span>
+                            <script>
+                                var slider = document.getElementById("myRange");
+                                var output = document.getElementById("demo");
+                                output.innerHTML = slider.value; // Display the default slider value
+                    
+                                // Update the current slider value (each time you drag the slider handle)
+                                slider.oninput = function() {
+                                output.innerHTML = this.value;
+                            }
+                              </script>
+                        </div>
+                        <br><br><br>
+                    <div class="w3-row">
+                        <div class="w3-col m2">
+                            Total Valuation: 
+                        </div>
+                        <div class="w3-col m3">
+                            <input type="number" id="total" style = "width: 80%">
+                        </div>
+                        <div class="w3-col m3">
+                            <button type="button">Submit!</button>
+                        </div>
+                        <br><br><br><br>
+                    </div>
+                </div>
+            </div>
+
+              </div>
+            </div>
+            
+                
+        </div>
+    </div>
+</div>
+
+<footer style="position: relative; margin-top: 0%;">
+    <img src="foot.png" class="foot" alt="foot" style="display: block;margin-left: auto;margin-right: auto; width: 100%;">
+</footer>
+</body>
+
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+</html>

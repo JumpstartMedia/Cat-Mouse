@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<title>Investor Menu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="morecss/form.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+/* toggle in label designing */ 
+.onoffswitch {
+    position: relative; 
+    width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #34A7C1; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+</style>
+<body class="w3-theme-l5">
+
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+   <a href="InvestorHomeMatch.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Home</a>
+   <a href="InvestorFavorites.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Favorites"><i class="fa fa-star"></i></a>
+   <div class="w3-dropdown-hover w3-hide-small">
+     <a href="InvestorMatch.html">
+     <button class="w3-button w3-padding-large" title="Matches"><i class="fa fa-envelope"></i></button>     
+     <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px"><span class="w3-dropdown-hover w3-black">3</span></a>
+     </div>
+   </div>
+   <a href="InvestorSetting.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Setting"><i class="fa fa-cog"></i></a>
+ 
+   <a href="SignIn.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="Logout"><i class="fa fa-sign-out"></i></a>
+   <a href="InvestorProfile.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+     <img src="images/f.jpg" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+   </a>
+  </div>
+ </div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+</div>
+
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1800px;margin-top:80px">    
+    <!-- The Grid -->
+        <div class="w3-light-grey w3-padding-64 w3-margin-bottom w3-center">
+            <h1 class="w3-jumbo">Preferences</h1>
+          </div>
+        <div class="w3-dark-grey w3-padding-64 w3-margin-bottom w3-margin-left" style = "margin-left: 10%"> 
+            <h2 class="w3-large w3-margin-left">Fill in these questions to allow us to find you better matches</h2><br><br>
+            <form class="modal-content" action="InvestorHomeMatch.html">
+        <!-- Item 1: TYpe of investor-->
+        <div class="w3-medium w3-margin-left">
+            <label for="type" > Type of Investor: <span></span></label><br>
+            <select name="type" required>
+                <option value="PE">PE</option>
+                <option value="Angel">Angel Investor</option>
+                <option value="VC">VC</option>
+            </select>
+          </div>
+          <br><br>
+            <!-- Item 2: Enable location-->
+          <div class="w3-medium w3-margin-left">
+            <label for="location">Location (Country, City):<span></span></label><br>
+            <input type="text" placeholder="e.g. China, Shanghai" name="location" size="50" required/> 
+            <p>Click the button to allow us to get your current Location.</p>
+            <button onclick="getLocation()">Click here</button><br>
+          </div>
+          <br><br>
+          <!-- Item 7: Role-->
+          <div class="w3-medium w3-margin-left">
+            <label for="role"> Role of Investor:<span></span></label><br>
+            <select name="role">
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+                </select>
+            </div>
+          <br><br>
+
+           <!-- Item 11: Investment timefram-->
+        <div class="w3-medium w3-margin-left">
+          <p>Investment Timeframe:</p>
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="1">
+            <label for="vehicle1">1-2yr</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="10">
+            <label for="vehicle2"> 2-5yr</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="50">
+            <label for="vehicle3"> 5-10yr</label><br>
+            <input type="checkbox" id="vehicle4" name="vehicle4" value="100">
+            <label for="vehicle3"> 10+ yr</label><br>
+          </div>
+        <br><br>
+          <!-- Item 8: Reporting Requirement-->
+          <div class="w3-medium w3-margin-left">
+            <label for="report" required>Reporting Requirement:<span></span></label><br>
+            <select name="report">
+                <option value="monthly">Monthly</option>
+                <option value="quarterly">Quarterly</option>
+                <option value="half-yearly">Half-yearly</option>
+                <option value="yearly">Yearly</option>
+            </select>
+          </div>
+          <br><br>
+        <!-- Item 11: Size of investment-->
+        <div class="w3-medium w3-margin-left">
+          <p>Size of investment (USD):</p>
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="1">
+            <label for="vehicle1">1-10k</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="10">
+            <label for="vehicle2"> 10k-50k</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="50">
+            <label for="vehicle3"> 50k-100k</label><br>
+            <input type="checkbox" id="vehicle4" name="vehicle4" value="100">
+            <label for="vehicle3"> 100k+</label><br>
+          </div>
+        <br><br>
+
+        <div class="w3-medium w3-margin-left">
+          <h2 class="w3-large"> Preferences for Startups
+          </h2><br>
+          <label>1. Industry interested in: </label><br>
+          <input type="checkbox" id="industry1" name="industry1" value="Fashion">
+          <label for="vehicle1"> Fashion</label><br>
+          <input type="checkbox" id="industry2" name="vehicle2" value="Tech">
+          <label for="vehicle2"> Tech</label><br>
+          <input type="checkbox" id="industry3" name="vehicle3" value="Finance">
+          <label for="vehicle3"> Finance</label><br><br><br></br>
+
+
+          <label>2. Proximity of Startups</label><br>
+          <input type="checkbox" id="industry1" name="industry1" value="Within City">
+          <label for="vehicle1"> Within City</label><br>
+          <input type="checkbox" id="industry2" name="vehicle2" value="Within Country">
+          <label for="vehicle2"> Within Country</label><br>
+          <input type="checkbox" id="industry3" name="vehicle3" value="Within Continent">
+          <label for="vehicle3"> Within Continent</label><br>
+          <input type="checkbox" id="industry3" name="vehicle3" value="Anywhere">
+          <label for="vehicle3"> Anywhere</label><br><br><br></br>
+
+
+          <label>3. Startup Stage of Development: </label><br>
+          <input type="checkbox" id="industry1" name="industry1" value="Idea Stage">
+          <label for="vehicle1"> Idea Stage</label><br>
+          <input type="checkbox" id="industry2" name="vehicle2" value="Development Stage">
+          <label for="vehicle2"> Development Stage</label><br>
+          <input type="checkbox" id="industry3" name="vehicle3" value="Startup Stage">
+          <label for="vehicle3"> Startup Stage</label><br>
+          <input type="checkbox" id="industry3" name="vehicle3" value="Expansion Stage">
+          <label for="vehicle3"> Expansion Stage</label><br><br><br></br>
+        </div>
+
+
+
+        <div class="w3-margin-left">
+            <h2 class="w3-large">Terms and Conditions:</h2> <br>
+            <label for="myCheck">You consent to receive communications from us electronically. We will communicate with you by e-mail or phone. You agree that all agreements, notices, disclosures and other communications that we provide to you electronically satisfy any legal requirement that such communications be in writing.</label>  
+                <input type="checkbox" value = "check" id="myCheck" name="test" required>
+            <br><br>
+            <div class="btn-block">
+                <button type="submit" href="InvestorHomeMatch.html">Submit</button>
+            </div>
+        </div>
+      </form>
+      </div>
+      <br><br><br><br><br><br><br><br>
+    </div>
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d5 w3-center w3-xlarge">
+  <div class="w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p class="w3-medium">Powered by <a href="http://jumpstartmag.com/" target="_blank" class="w3-hover-text-green">jumpstartmag</a></p>
+</footer>
+</body>
+
+<script>
+    var x = document.getElementById("demo");
+    
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+      } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+    
+    function showPosition(position) {
+      x.innerHTML = "Latitude: " + position.coords.latitude + 
+      "<br>Longitude: " + position.coords.longitude;
+    }
+    
+    function showError(error) {
+      switch(error.code) {
+        case error.PERMISSION_DENIED:
+          x.innerHTML = "User denied the request for Geolocation."
+          break;
+        case error.POSITION_UNAVAILABLE:
+          x.innerHTML = "Location information is unavailable."
+          break;
+        case error.TIMEOUT:
+          x.innerHTML = "The request to get user location timed out."
+          break;
+        case error.UNKNOWN_ERROR:
+          x.innerHTML = "An unknown error occurred."
+          break;
+      }
+    }
+        function toggleState(){
+          var button = document.getElementById("onoffswitch");
+          if (state) {
+                button.innerHTML = "ON";
+                getLocation();
+                x.innerHTML = "Locationa accepted"
+              } else {
+                button.innerHTML = "OFF";
+           }
+           
+        }
+
+    </script>
+</html>

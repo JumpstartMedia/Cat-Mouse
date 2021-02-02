@@ -1,0 +1,709 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+    <link rel=stylesheet href = "signin.css">
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="morecss/favorites.css">
+    <style>
+        #myinput {
+    background: linear-gradient(to right, #82CFD0 0%, #82CFD0 50%, #fff 50%, #fff 100%);
+    border: solid 1px #82CFD0;
+    border-radius: 8px;
+    height: 7px;
+    width: 700px;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+  }
+    body{
+        background-color: #ffffff !important;
+        text-decoration: none !important;
+    }
+    html, body, h1, h2, h3, h4, h5, p {font-family: "Manrope"}
+    h1 {
+        font-weight: 800;
+    }
+    </style>
+  <script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>Favorites</title>
+</head>
+<body style="background-color: #ffffff;">
+
+<!-- Navbar -->
+<div class="top">
+ <div class="bar">
+    <a class="logodiv" title="Logo">
+        <img src="logo.png" class="logo" alt="Logo">
+      </a>
+   <!--
+      <a href="StartupHomeMatch.html" class="baritem" title="Home"><p class="word">Home<p></a>
+  <a href="StartupHomeMatch.html" class="baritem" title="Matches"><p class="word">Matches<p></a>
+  <a href="StartupHomeMatch.html" class="baritem" title="Favorites"><p class="word">Favorites<p></a>
+  <a href="StartupSetting.html" class="baritem" title="Setting"><p class="word">Setting</p></a>
+   -->   
+
+  <a href="#" class="signup" title="signup" onclick="document.getElementById('CIA').style.display='block'"><button class="signupbutton"><p class="word">Signup</p></button></a>
+  <a href="#" class="login" title="Login" onclick="document.getElementById('login').style.display='block'"><button class="loginbutton"><p class="loginword">Login</p></button></a>
+ </div>
+</div>
+
+<!-- Page Container -->
+<div class="w3-container" style="background-color: #ffffff">    
+    <div class="container1a">
+        <br><br> <br><br> 
+        <h1 class="megaword">
+            Matchmaking 
+        </h1>
+        <h1 class="megaword">
+            for Startups
+        </h1>
+        <h1 class="megaword">
+            and Investors
+        </h1>
+        <br> <br>
+        <div style="font-size: 2vh;">
+            <p>Build a relationship with your startups, and add value from your</p>
+          <p>experience and network. </p>
+          <br><br><br>
+          <button class="gsbutton" onclick="document.getElementById('CIA').style.display='block'"><p class="gsword">Get Started</p></button>
+        </div>
+    </div>
+    <div class="container1b">
+        <img src="1b.png" style="height: 200%; width: 250%;margin-left: 20%; margin-top: 0%;margin-bottom:10%;">
+    </div>
+</div>
+<div class="container2"> 
+    <img src="2.png" style="  display: block;margin-left: auto;margin-right: auto; width: 100%;" >
+</div>   
+<div class="container3"> 
+    <img src="3.png"style="  display: block;margin-left: auto;margin-right: auto; width: 100%;" >
+</div>  
+<div class="container4"> 
+    <img src="4.png" style="display: block; width: 100%" >
+</div>     
+
+<div class="container5">    
+    <div class="container5a">
+        <img src="ri.png" style="height: 700px; width: 700px; margin-bottom: 20%">
+    </div>
+    <div class="container5b" style="  position: relative; -ms-transform: translateY(50%);transform: translateY(30%);">
+        
+        <h1 class="regularword" style="font-weight: lighter !important;">
+            Feature
+        </h1>
+        <div style="font-family:'Helvetica'; font-size: 2vh;">
+        <p>On Cat Meets Mouse, startups and investors can </p>
+        <p>discover and connect with each other. We’re  </p>
+        <p>changing the dynamics of fundraising with our smart  </p>
+        <p>algorithm. Our goal is take the friction out of   </p>
+        <p>meetings so that like-minded individuals can go on a    </p>
+        <p>journey together. </p>
+        <br>
+        <a href="#" class="learnmore" title="gs" onclick="document.getElementById('createstartupaccount').style.display='block'"><p class="getstartedword" style="text-decoration: none !important; font-size: 2vh;">Get Started <i class="fa fa-arrow-right" style="color: #9228d8; "></i></p></a>
+    </div>
+</div>
+<div class="container6"> 
+  <div class="container6a">
+      <h1 class="regularword" style="font-weight: lighter !important;">
+        Robust Database
+    </h1>
+  </div>
+  <div class="container6b">
+    <div style="font-family:'Helvetica'; font-size: 2vh; margin-top: 5%; margin-bottom: 25%;">
+      <p>Our partnership with Jumpstart media gives us access to</p>
+      <p>unparalleled access to the innovation ecosystem </p>
+      <br>
+      <a href="https://jumpstartmag.com/" class="getstarted" title="gs"><p class="getstartedword" style="text-decoration: none !important; font-size: 2vh !important;">Learn more about Jumpstart here <i class="fa fa-arrow-right" style="color: #9228d8; "></i></p></a>
+    </div>
+  </div>
+</div>  
+<div class="container7"> 
+    <img src="7.png"style="  display: block;margin-left: auto;margin-right: auto; width: 100%;" >
+    <button class="gsbutton" style="margin-top: 5%; margin-left: 50%; margin-bottom: 0; -ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%);"><p class="gsword">Explore Startup</p></button>
+</div>  
+  
+<div id="createstartupaccount" class="form-popup" class="w3-animate-opacity">
+        <div class="containeraa" style="margin-left: 20%; width: 60%; padding:64px">
+            <div class="containerbb w3-white" style="max-height: 80%; width: 100%; border: solid;">
+              <span onclick="document.getElementById('createstartupaccount').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-right" title="Close Modal2">×</span>
+        <h1 class="text-left-right2">
+            <a href="#" id="headinga" onclick="document.getElementById('createaccount').style.display='block'";>
+                <span class="left-texta"> 
+                <p>            Sign up for Startup</p>
+                </span> 
+            </a>
+            <a href="#" id="headingb" onclick="document.getElementById('createinvestoraccount').style.display='block'; document.getElementById('createstartupaccount').style.display='none'">
+                <span class="right-texta">
+                    <p>Sign up for Investor</p>
+                </span> 
+            </a>
+        </h1>
+        <!--Sign up for Startup-->
+                <div id="id112" style="padding-top: 10px; height: 120%">
+                    <form class="modal-content" action="InvestorHome.html">
+                    <img src="progress.png" style=" display: block; margin-left: auto; margin-right: auto; margin-top: 15%; width: 78%;">
+                    <!-- Item 1: Fullname-->
+                    <div class="w3-medium"style="padding: 2.5px 10px;">
+                        <input type="text" placeholder="Full Name" name="fullname" 
+                        style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                        required/> 
+                      </div>
+                      <!-- Item 2: Position-->
+                    <div class="w3-medium"style="padding: 2.5px 10px;">
+                        <input type="text" class="text" placeholder="Position" name="position" 
+                        style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                        required/> 
+                      </div>
+                      <!-- Item 3: Startup-->
+                    <div class="w3-medium"style="padding: 2.5px 10px; ">
+                        <input type="text" class="text" placeholder="Startup" name="startup" 
+                        style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                        required/> 
+                      </div>
+                      <!-- Item 4: Location-->
+                      <div class="w3-medium"style="padding: 2.5px 10px;">
+                        <input type="text" class="text" placeholder=" Location" name="l" 
+                        style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                        required/> 
+                      </div>
+                      <!-- Item 5: Industry-->
+                      <div class="w3-medium"style="padding: 2.5px 10px;">
+                        <input type="text" placeholder="Industry" name="Industry" size="105"
+                        style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                         required/> 
+                      </div>
+                      <!-- Item 5: Website-->
+                      <div class="w3-medium"style="padding: 2.5px 10px;">
+                        <input type="text" placeholder="Website" name="w" size="105" 
+                        style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                        required/> 
+                      </div>
+                      <!-- Item 5: Additional Information-->
+                      <div class="w3-medium"style="padding: 2.5px 10px; border-color: lightgrey;">
+                        <textarea id="text" name="ai" rows="4" cols="93" style="margin-left:5%; border-radius: 10px; border-width: 2px; border-color: lightgrey; background-color: white; color: darkgrey;" placeholder=" Additional Information"></textarea> 
+                    <br><br>  
+                    </div>
+                      <!-- Item 5: Bio-->
+                    <div class="w3-medium"style="padding-top: 2.5x; padding-bottom: 0x; padding-left: 10px; padding-right: 10px; border-color: lightgrey;">
+                        <textarea id="bio" name="bio" rows="4" cols="93" style="margin-left: 5%; border-radius: 10px; border-width: 2px; border-color: lightgrey; background-color: white; color: darkgrey;" placeholder=" Bio"></textarea> 
+                    <br><br>
+                        </div>  
+                        <div class="w3-medium"style="padding-top: 10px; padding-bottom: 0x; padding-left: 10px; padding-right: 10px; border-color: lightgrey;">
+                            <button type="submit" style="padding: 10px 20px; border-radius: 10px; background-color: #1ebdc8; text-align: center; margin-left: 40%; width:20%; color: white; border-style: none;"  class="signupbtn" onclick="document.getElementById('page2').style.display='inline-block'; document.getElementById('createstartupaccount').style.display='none'">Next Step</button>
+                        </div>
+                      </form>
+                </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="CIA" class="form-popup" class="w3-animate-opacity">
+  <div class="col-7 row-13 w3-white" style="margin-top: 5%; margin-bottom: 10%; margin-left: 20%; margin-right: 20%;border-width: 2px !important; border-style:solid !important; border-color: black important">
+    <span onclick="document.getElementById('CIA').style.display='none'" class="w3-button w3-large w3-transparent w3-right" title="Close Modal">×</span>
+    <div class="col-10 row-1;" style="border-color: white; border-style: solid; margin-left: 9%; margin-right: 10%; top:0%">
+          <br>
+          <!--word1-->
+          <div class="col-4 row-0" style="border-color: white; border-style: solid; margin-left: 15%; margin-right: 0%; float: left">
+            <a href="#" id="headinga" onclick="document.getElementById('CIA').style.display='block'";>
+              <p style="color: #1ebdc8; margin-top: 5%; margin-left: 15%;font-size: 20px;">Sign up for Startup</p>
+            </a>
+          </div>
+           <!--word2-->
+           <div class="col-4 row-0" style="border-color: white; border-style: solid; margin-left: 3%; margin-right: 5%; float: left">
+            <a href="#" id="headingb" onclick="document.getElementById('IIA').style.display='block'; document.getElementById('CIA').style.display='none'">
+                  <h1 style="color:lightgray;; margin-top: 5%; margin-left: 15%; font-size: 20px;">Sign up for Investor</h1>
+          </a>
+          </div>
+    <img src="progress.png" style=" display: block; margin-left: auto; margin-right: auto; margin-top: 0%; width: 80%;">
+  </div>
+  <div class="col-10 row3" style="margin-left: 15%;">
+    <form action="CIA.php" method="get">
+      <div class="col-10 row1"style="padding: 2.5px 10px;">
+        <input type="text" placeholder="Email" name="e" size="105"
+        style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+         required/> 
+      </div>
+      <div class="col-10 row1"style="padding: 2.5px 10px;">
+        <input type="text" placeholder="Username" name="u" size="105" 
+        style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+        required/> 
+      </div>
+      <div class="col-10 row1"style="padding: 2.5px 10px;">
+        <input type="text" placeholder="Password" name="p" size="105" 
+        style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+        required/> 
+      </div>
+      <button type="submit" style="padding: 10px 20px; border-radius: 10px; background-color: #1ebdc8; text-align: center; margin-left: 40%; width:20%; color: white; border-style: none;"  class="signupbtn" onclick="document.getElementById('IIA').style.display='none'">Submit</button>
+    </form>
+  </div>
+  </div>
+</div>
+
+<div id="IIA" class="form-popup" class="w3-animate-opacity">
+  <div class="col-7 row-13 w3-white" style="margin-top: 5%; margin-bottom: 10%; margin-left: 20%; margin-right: 20%;border-width: 2px !important; border-style:solid !important; border-color: black important">
+    <span onclick="document.getElementById('IIA').style.display='none'" class="w3-button w3-large w3-transparent w3-right" title="Close Modal">×</span>
+    <div class="col-10 row-1;" style="border-color: white; border-style: solid; margin-left: 9%; margin-right: 10%; top:0%">
+          <br>
+          <!--word1-->
+          <div class="col-4 row-0" style="border-color: white; border-style: solid; margin-left: 15%; margin-right: 0%; float: left">
+            <a href="#" id="headinga" onclick="document.getElementById('CIA').style.display='block'; document.getElementById('IIA').style.display='none'";>
+              <p style="color:lightgray; margin-top: 5%; margin-left: 15%;font-size: 20px;">Sign up for Startup</p>
+            </a>
+          </div>
+           <!--word2-->
+           <div class="col-4 row-0" style="border-color: white; border-style: solid; margin-left: 3%; margin-right: 5%; float: left">
+            <a href="#" id="headingb" onclick="document.getElementById('IIA').style.display='block'">
+                  <h1 style="color:#1ebdc8;; margin-top: 5%; margin-left: 15%; font-size: 20px;">Sign up for Investor</h1>
+          </a>
+          </div>
+    <img src="progress.png" style=" display: block; margin-left: auto; margin-right: auto; margin-top: 0%; width: 80%;">
+  </div>
+  <div class="col-10 row3" style="margin-left: 15%;">
+    <form action="IIA.php" method="get">
+      <div class="col-10 row1"style="padding: 2.5px 10px;">
+        <input type="text" placeholder="Email" name="e" size="105"
+        style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+         required/> 
+      </div>
+      <div class="col-10 row1"style="padding: 2.5px 10px;">
+        <input type="text" placeholder="Username" name="u" size="105" 
+        style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+        required/> 
+      </div>
+      <div class="col-10 row1"style="padding: 2.5px 10px;">
+        <input type="text" placeholder="Password" name="p" size="105" 
+        style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+        required/> 
+      </div>
+      <button type="submit" style="padding: 10px 20px; border-radius: 10px; background-color: #1ebdc8; text-align: center; margin-left: 40%; width:20%; color: white; border-style: none;"  class="signupbtn" onclick="document.getElementById('IIA').style.display='none'">Submit</button>
+    </form>
+  </div>
+  </div>
+</div>
+
+<div id="page2" class="form-popup" class="w3-animate-opacity">
+  <div class="col-7 row-13 w3-white" style="margin-top: 5%; margin-bottom: 10%; margin-left: 20%; margin-right: 20%;border-width: 2px !important; border-style:solid !important; border-color: black important">
+    <span onclick="document.getElementById('page2').style.display='none'" class="w3-button w3-large w3-transparent w3-right" title="Close Modal">×</span>
+    <div class="col-10 row-1;" style="border-color: white; border-style: solid; margin-left: 9%; margin-right: 10%; top:0%">
+          <br>
+          <!--word1-->
+          <div class="col-4 row-0" style="border-color: white; border-style: solid; margin-left: 15%; margin-right: 0%; float: left">
+            <a href="#" id="headinga" onclick="document.getElementById('createaccount').style.display='block'";>
+              <p style="color: #1ebdc8; margin-top: 5%; margin-left: 15%;font-size: 20px;">Sign up for Startup</p>
+            </a>
+          </div>
+           <!--word2-->
+           <div class="col-4 row-0" style="border-color: white; border-style: solid; margin-left: 3%; margin-right: 5%; float: left">
+            <a href="#" id="headingb" onclick="document.getElementById('createinvestoraccount').style.display='block'; document.getElementById('page2').style.display='none'">
+                  <h1 style="color:lightgray;; margin-top: 5%; margin-left: 15%; font-size: 20px;">Sign up for Investor</h1>
+          </a>
+          </div>
+    <img src="progress2.png" style=" display: block; margin-left: auto; margin-right: auto; margin-top: 0%; width: 80%;">
+  </div>
+    <div class="col-10 row-4;" style="margin-left: 9%; margin-right: 10%">
+        <h4>Series</h4>
+        <br>
+        <button class="series" type="button">A</button>
+        <button class="series"  type="button" style="font-size: 16px; padding: 15px 45px; float: left; margin-right: 10%; margin-left: 10%">B</button>
+        <button class="series" type="button" style="font-size: 16px; padding: 15px 45px; float: left; margin-right: 5%; margin-left: 10%">C</button>
+    </div>
+    <div class="col-12 row-0">
+    </div>
+    <div class="col-10 row-4;" style="border-color: white; border-style: solid; margin-left: 9%; margin-right: 10%">
+        <h4>
+          Development Stage
+        </h4>
+        <br>
+        <div class="chrome">
+          <input id="myinput" type="range" value="50" />
+        </div>
+        <br>
+        <p style="float:left; margin-right: 15%">Idea Stage</p>
+        <p style="float:left; margin-right: 15%">Development Stage</p>
+        <p style="float:left; margin-right: 15%">Startup Stage</p>
+        <p style="float:left;">Expansion Stage</p>
+    </div>
+    <div class="col-12 row-0">
+    </div>
+    <div class="col-3 row-1" style="border-color: white; border-style: solid; margin-left: 17%; margin-right: 10%; float: left">
+        Number of Exits by Founding Team
+        <br><br>
+        <input type="text" name = "exits" placeholder = "e.g. 3 exits">
+    </div>
+    <div class="col-3 row-1" style="border-color: white; border-style: solid; margin-left: 9%; margin-right: 10%; float: left">
+        Current Money Raised<br>
+        <br><br>
+        <input type="text" name = "cmoney" placeholder = "e.g. 2 mio">
+    </div>
+    <div class="col-12 row-0">
+    </div>
+    <div class="col-3 row-1" style="border-color: white; border-style: solid; margin-left: 17%; margin-right: 10%; float: left">
+        Profitability
+        <br><br>
+        <input type="text" name = "profitability" placeholder = "Yes/No">
+    </div>
+    <div class="col-3 row-1" style="border-color: white; border-style: solid; margin-left: 9%; margin-right: 10%; float: left">
+        Annual Revenue
+        <br><br>
+        <input type="text" name = "arevenue" placeholder = "e.g. $300,000">
+    </div>
+    <div class="col-12 row-0">
+    </div>
+    <div class="col-3 row-1" style="border-color: white; border-style: solid; margin-left: 17%; margin-right: 10%; float: left">
+        Pre-Money Valuation
+        <br><br>
+        <input type="text" name = "valuation" placeholder = "e.g. 5 mio">
+    </div>
+    <div class="col-3 row-1" style="border-color: white; border-style: solid; margin-left: 9%; margin-right: 10%; float: left">
+        % of Company willing to sell
+        <br><br>
+        <input type="text" name = "percent" placeholder = "e.g. 30% total">
+    </div>
+    <div class="col-12 row-0">
+    </div>
+    <div class="col-12 row-0">
+        <button type="submit" style="padding: 10px 20px; position: absolute; border-radius: 10px; background-color: #1ebdc8; margin-bottom: 50%; margin-left: 23%; width:10%; color: white; border-style: none;"  class="signupbtn" onclick="document.getElementById('page3').style.display='inline-block'; document.getElementById('page2').style.display='none'">Next Step</button>
+    </div>
+  </div>
+</div>
+
+<div id="page3" class="form-popup" class="w3-animate-opacity">
+  <div class="col-7 row-13 w3-white" style="margin-top: 5%; margin-bottom: 10%; border-color: white; border-style: solid; margin-left: 20%; margin-right: 20%;border-width: 2px !important; border-style:double !important; border-color: black important">
+    <span onclick="document.getElementById('page3').style.display='none'" class="w3-button w3-large w3-transparent w3-right" title="Close Modal">×</span>
+    <div class="col-10 row-1;" style="border-color: white; border-style: solid; margin-left: 9%; margin-right: 10%; top:0%">
+          <br>
+          <!--word1-->
+          <div class="col-4 row-0" style="border-color: white; border-style: solid; margin-left: 15%; margin-right: 0%; float: left">
+            <a href="#" id="headinga" onclick="document.getElementById('createaccount').style.display='block'";>
+              <p style="color: #1ebdc8; margin-top: 5%; margin-left: 15%;font-size: 20px;">Sign up for Startup</p>
+            </a>
+          </div>
+           <!--word2-->
+           <div class="col-4 row-0" style="border-color: white; border-style: solid; margin-left: 3%; margin-right: 5%; float: left">
+            <a href="#" id="headingb" onclick="document.getElementById('createinvestoraccount').style.display='block'; document.getElementById('page3').style.display='none'">
+              <span>
+                  <h1 style="color:lightgray;; margin-top: 5%; margin-left: 15%; font-size: 20px;">Sign up for Investor</h1>
+              </span> 
+          </a>
+          </div>
+    <img src="progress3.png" style=" display: block; margin-left: auto; margin-right: auto; margin-top: 0%; width: 80%;">
+  </div>
+    <div class="col-4 row-3" style="border-color: white; border-style: solid; margin-left: 15%; margin-right: 10%; float: left">
+        Upload Logo
+        <br><br>
+        <input type="file" class="custom-file-input">
+    </div>
+    <div class="col-4 row-3" style="border-color: white; border-style: solid; margin-right: 5%; float: left">
+        Upload Company's pitchbook
+        <br><br>
+        <input type="file" class="custom-file-input">
+    </div>
+    <div class="col-10 row-0" style="border-color: white; border-style: solid; margin-left: 11%; float: left">
+        Upload images here
+    </div>
+    <div class="col-12 row-4" style="border-color: white; border-style: solid; margin-left: 11%">
+      <input type="file" class="custom-file-input">
+      <input type="file" class="custom-file-input"> 
+      <input type="file" class="custom-file-input">
+      <br><br>
+      <input type="file" class="custom-file-input">
+      <input type="file" class="custom-file-input">
+      <input type="file" class="custom-file-input">
+      <br><br>
+    </div>
+    <div class="col-12 row-1">
+    </div>
+    <div class="col-12 row-1">
+        <button type="submit" style="padding: 10px 20px; position: absolute; border-radius: 10px; background-color: #1ebdc8; margin-bottom: 50%; margin-left: 23%; width:10%; color: white; border-style: none !important;"  class="signupbtn" onclick="document.getElementById('page4').style.display='inline-block'; document.getElementById('page3').style.display='none'">Next Step</button>
+    </div>
+</div>
+</div>
+
+<div id="page4" class="form-popup" class="w3-animate-opacity">
+  <div class="col-7 row-11 w3-white" style="margin-top: 5%; border-color: white; border-style: solid; margin-left: 20%; margin-right: 20%; border-width: 2px !important; border-style:double !important; border-color: black important">
+    <span onclick="document.getElementById('page4').style.display='none'" class="w3-button w3-large w3-transparent w3-right" title="Close Modal">×</span>
+    <div class="col-10 row-1;" style="border-color: white; border-style: solid; margin-left: 9%; margin-right: 10%; top:0%">
+          <br>
+          <!--word1-->
+          <div class="col-4 row-0" style="border-color: white; border-style: solid; margin-left: 15%; margin-right: 0%; float: left">
+            <a href="#" id="headinga" onclick="document.getElementById('createaccount').style.display='block'";>
+              <p style="color: #1ebdc8; margin-top: 5%; margin-left: 15%;font-size: 20px;">Sign up for Startup</p>
+            </a>
+          </div>
+           <!--word2-->
+           <div class="col-4 row-0" style="border-color: white; border-style: solid; margin-left: 3%; margin-right: 5%; float: left">
+            <a href="#" id="headingb" onclick="document.getElementById('createinvestoraccount').style.display='block'; document.getElementById('page4').style.display='none'">
+              <span>
+                  <h1 style="color:lightgray;; margin-top: 5%; margin-left: 15%; font-size: 20px;">Sign up for Investor</h1>
+              </span> 
+          </a>
+          </div>
+    <img src="progress4.png" style=" display: block; margin-left: auto; margin-right: auto; margin-top: 0%; width: 80%;">
+  </div>
+<div class="col-12 row-0">
+
+</div>
+<div class="col-10 row-7" style="border-color: white; border-style: solid; margin-left: 20%; margin-right: 10%; float: left">
+    Keywords and Tags
+    <br>
+    Help us find the perfect matching investor
+    <br><br><br>
+    <div class="panel-footer" id="loop">
+        <ul class="post-action">
+          <button class="tag btn-success guess" id="one" value="one" ><p style="color: black;">Telecommunication</p></button>
+          <button class="tag btn-success guess" id="two" value="two" ><p style="color: black;">Automation</p></button>
+          <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">IOT</p></button>
+          <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">IOT</p></button>
+          <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">IOT</p></button>
+          <br><br>
+          <button class="tag btn-success guess" id="one" value="one" ><p style="color: black;">AR/VR</p></button>
+          <button class="tag btn-success guess" id="two" value="two" ><p style="color: black;">Transportation</p></button>
+          <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">Education</p></button>
+          <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">IOT</p></button>
+          <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">IOT</p></button>
+          <br><br>
+          <button class="tag btn-success guess" id="one" value="one" ><p style="color: black;">Renewable Energy</p></button>
+          <button class="tag btn-success guess" id="two" value="two" ><p style="color: black;">Healthcare</p></button>
+          <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">Consumer goods</p></button>
+          <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">IOT</p></button>
+          <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">IOT</p></button>
+          <br><br>
+          <button class="tag btn-success guess" id="one" value="one" ><p style="color: black;">Services</p></button>
+          <button class="tag btn-success guess" id="two" value="two" ><p style="color: black;">Fintech/p></button>
+          <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">Media</p></button>
+          <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">IOT</p></button>
+          <button class="tag btn-success guess" id="three" value="three" ><p style="color: black;">IOT</p></button>
+          <br><br>
+        </ul>
+    </div>
+    <br><br>
+</div>
+<div class="col-12 row-2">
+  <a href="StartupHome.html" ><button type="submit" style="margin-bottom: 0%; padding: 10px 20px; border-radius: 10px; background-color: #1ebdc8; margin-left: 45%; width:10%; color: white; border-style: none !important;"  class="signupbtn" onclick="document.getElementById('page4').style.display='none'">Sign up</button></a>
+  </div>
+</div>
+</div>
+
+
+<div id="createinvestoraccount" class="form-popup" class="w3-animate-opacity">
+    <div class="container22" style="margin-left: 20%; width: 60%; padding:64px">
+      <div class="container23 w3-white" style="max-height: 80%; width: 100%; border: solid;">
+        <span onclick="document.getElementById('createinvestoraccount').style.display='none'" class="w3-button w3-xlarge w3-transparent" title="Close Modal">×</span>
+        <h1 class="text-left-right">
+            <a href="#" id="heading1" onclick="document.getElementById('createstartupaccount').style.display='block'; document.getElementById('createinvestoraccount').style.display='none'">
+                <span class="left-text"> 
+                <p>Startup Sign Up</p>
+                </span> 
+            </a>
+            <a href="#" id="heading2" onclick="document.getElementById('createinvestoraccount').style.display='block'">
+                <span class="right-text">
+                    <p>Investor Sign Up</p>
+                </span> 
+            </a>
+        </h1>
+        <!--Sign up for Investor-->
+                <div id="id112" style="padding-top: 10px; height: 120%">
+                    <form class="modal-content" action="InvestorHome.html">
+                    <!-- Item 1: Fullname-->
+                    <div class="w3-medium"style="padding: 2.5px 10px;">
+                        <input type="text" placeholder="Full Name" name="fullname" 
+                        style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                        required/> 
+                      </div>
+                      <!-- Item 2: Position-->
+                    <div class="w3-medium"style="padding: 2.5px 10px;">
+                        <input type="text" class="text" placeholder="Position" name="position" 
+                        style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                        required/> 
+                      </div>
+                      <!-- Item 3: Startup-->
+                    <div class="w3-medium"style="padding: 2.5px 10px; ">
+                        <input type="text" class="text" placeholder="Startup" name="startup" 
+                        style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                        required/> 
+                      </div>
+                      <!-- Item 4: Location-->
+                      <div class="w3-medium"style="padding: 2.5px 10px;">
+                        <input type="text" class="text" placeholder=" Location" name="l" 
+                        style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                        required/> 
+                      </div>
+                      <!-- Item 5: Industry-->
+                      <div class="w3-medium"style="padding: 2.5px 10px;">
+                        <input type="text" placeholder="Industry" name="Industry" size="105"
+                        style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                         required/> 
+                      </div>
+                      <!-- Item 5: Website-->
+                      <div class="w3-medium"style="padding: 2.5px 10px;">
+                        <input type="text" placeholder="Website" name="w" size="105" 
+                        style="margin-left: 5%; border-width: 2px;border-radius: 10px; width: 90%; background-color: white; color: darkgrey;border-style: solid; border-color: lightgrey;"
+                        required/> 
+                      </div>
+                      <!-- Item 5: Additional Information-->
+                      <div class="w3-medium"style="padding: 2.5px 10px; border-color: lightgrey;">
+                        <textarea id="text" name="ai" rows="4" cols="93" style="margin-left:5%; border-radius: 10px; border-width: 2px; border-color: lightgrey; background-color: white; color: darkgrey;" placeholder=" Additional Information"></textarea> 
+                    <br><br>  
+                    </div>
+                      <!-- Item 5: Bio-->
+                    <div class="w3-medium"style="padding-top: 2.5x; padding-bottom: 0x; padding-left: 10px; padding-right: 10px; border-color: lightgrey;">
+                        <textarea id="bio" name="bio" rows="4" cols="93" style="margin-left: 5%; border-radius: 10px; border-width: 2px; border-color: lightgrey; background-color: white; color: darkgrey;" placeholder=" Bio"></textarea> 
+                    <br><br>
+                        </div>  
+                        <div class="w3-medium"style="padding-top: 10px; padding-bottom: 0x; padding-left: 10px; padding-right: 10px; border-color: lightgrey;">
+                            <a href="InvestorHome.html" ><button type="submit" style="border-radius: 10px; background-color: #9228d8; margin-left: 45%; width:10%; color: white; border-style: none !important;"  class="signupbtn" onclick="document.getElementById('createstartupaccount').style.display='none'">Sign up</button></a>
+                        </div>
+                      </form>
+                </div>
+    </div>
+</div>
+</div>
+
+  <!--Login!-->
+<div id="login" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+  
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('login').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-right" title="Close Modal">×</span>
+        <img src="images/f.jpg" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+      </div>
+  
+      <form class="w3-container" action="login.php">  <!--action="/action_page.php"-->
+        <div class="w3-section">
+          <label style = "color:Black"><b>Username</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="u" required>
+          <label style = "color:Black"><b>Password</b></label>
+          <input class="w3-input w3-border" type="text" placeholder="Enter Password" name="p" required>
+          <button class="gsbutton w3-block w3-section w3-padding" style="background-color:#ce91f5; color: #FFFFFF; border-radius:0.5em;
+          border-style: none; text-decoration: none !important;" type="submit">Login</button>     <!--<a href="StartupHomeMatch.html">Login</a>-->
+          <input class="w3-check w3-margin-top w3-amber" type="checkbox" checked="checked"> <label style = "color:Black"><b>Remember Me</b></label>
+        </div>
+      </form>
+  
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <button onclick="document.getElementById('login').style.display='none';" type="button" class="gsbutton" style="text-decoration: none; 
+        color:#FFFFFF; background-color: #9228d8;">Cancel</button>
+        <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+      </div>
+  
+    </div>
+  </div>
+  
+  
+  <!-- Footer -->
+  <!--
+    <footer class="footer w3-container w3-padding-32 w3-center w3-xlarge">
+    <div class="grid-container">
+        <div class="grid-title">Product</div>
+        <div class="grid-title">Company</div>
+        <div class="grid-title">Legal</div>  
+        <div class="grid-title">Follow us</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>  
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>  
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>  
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div> 
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>  
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>     
+      </div>
+      <img src="footer.png" class="footerimage">
+    <p class="w3-medium">Powered by <a href="http://jumpstartmag.com/" target="_blank" class="w3-hover-text-green">jumpstartmag</a></p>
+  </footer>
+  -->
+  <footer style="position: relative; margin-top: 10%;">
+    <img src="foot.png" class="foot" alt="foot" style="display: block;margin-left: auto;margin-right: auto; width: 100%;">
+</footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+         $(".guess").click(function(){
+            xyz = this.id
+            console.log(xyz)
+            if(this.clicked){
+                $(this).css('background-color', '#f8f8f8');
+                $(this).css('color', 'black');
+                this.clicked  = false;
+            } else {
+                $(this).css('background-color', '#1ebdc8');
+                this.clicked  = true;
+            }
+        });
+    </script>
+<script>
+
+   document.getElementById("myinput").oninput = function() {
+  this.style.background = 'linear-gradient(to right, #82CFD0 0%, #82CFD0 ' + this.value + '%, #fff ' + this.value + '%, white 100%)'
+};
+    function changeColor(id)
+    {
+    document.getElementById(id).style.color = "#8B0000"; // 
+    }
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    // Get the modal
+    var modal1 = document.getElementById('id01');
+    var modal2 = document.getElementById('id02');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal1) {
+        modal1.style.display = "none";
+      }
+      else if (event.target == modal2) {
+        modal2.style.display = "none";
+      }
+    }
+    var count = 1;
+        function setColor(btn, color) {
+            var property = document.getElementById(btn);
+            if (count == 0) {
+                property.style.backgroundColor = "#FFFFFF"
+                count = 1;        
+            }
+            else {
+                property.style.borderColor = "#1ebdc8;"
+                count = 0;
+            }
+        }
+    </script>
+  </html>

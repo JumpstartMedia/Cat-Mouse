@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<title>Startup Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="signin.css">
+<link rel="stylesheet" href="home2.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    /* The popup form - hidden by default */
+/* The popup form - hidden by default */
+
+.form-popup {
+    display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 99; /* Sit on top */
+	left: 0;
+	right:0;
+	top: 0;
+	bottom:0;
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Add styles to the form container */
+.form-container {
+  margin-left: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-right: 10%;
+  padding: 10px;
+  background-color:white;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+</style>
+<body>
+
+
+
+<!-- Navbar -->
+<div class="top">
+    <div class="bar">
+       <a class="baritem"></a>
+       <a class="logodiv" title="Logo">
+           <img src="logo.png" class="logo" alt="Logo">
+         </a>
+     <a href="StartupHome.html" class="baritem" title="Home"><p class="word">Home<p></a>
+     <a href="StartupMatch.html" class="baritem" title="Matches"><p class="word">Matches<p></a>
+     <a href="StartupFavorite.html" class="baritem" title="Favorites"><p class="word">Favorites<p></a>
+     <a href="StartupSetting.html" class="baritem" title="Setting"><p class="word">Setting</p></a>
+     <a href="StartupAccount.html" class="baritem" title="Myaccount" style = "position: absolute; right: 16%; top: 0%"><p class="word">My Account<p></a>
+      <a href="SignIn.html" class="baritem" style = "position: absolute; right: 10%" title="Logout"><p class="word">Sign out</p></a>
+    </div>
+</div>
+
+<div class="w3-container" style="background-color: #ffffff;"> 
+    <div class="containerx" style="margin-left: 10%; margin-top: 5%; float: left; width: 500px;">
+        <h1 style="font-size: 400%; margin-left: 10%; margin-top: 15%; font-family: 'Arial Black';">Matchmaking </h1>
+        <h1 style="font-size: 400%; margin-left: 10%;font-weight:bolder;font-family: 'Arial Black'; ">for Startups</h1> 
+        <h1 style="font-size: 400%; margin-left: 10%;font-family: 'Arial Black'; ">and Investors</h1>
+        <p style="margin-left:10%; font-size: 100%;">Build a relationship with your startups, and add value from your </p>
+        <p style="margin-left:10%; font-size: 100%;">experience and network.</p>
+        <button class="matchbutton" onclick="openForm()" style="margin-left: 10%; width: 29%;"><p class="matchword">Start Matching</p></button>
+    </div>
+    <div class="containery" style="margin-left: 8%; margin-top: 0%; float: left">
+        <img src="1b.png" style="width: 700px; height:700px"></div>
+</div>
+
+
+<br><br>
+<div class="container" style="margin-left: 0%; margin-bottom: 5%;">
+  <div class="firstline"> 
+      <h1 style="float: left; font-size: 6vh; font-family: 'Arial Black'; margin-left: 10%; width: 61%">Investors near you</h1>
+      <button class="explorebutton" onclick="openForm()"><p class="exploreallword">Explore all <i class="fa fa-arrow-right" style="color: #1ebdc8; "></i></p></button>
+  </div>
+  <div class="secondline" style="position: relative;">
+    <table style="width:90%;padding:5px 5px; margin-left: 0%">
+      <br><br><br><br>
+    <tr>
+      <th>
+        <img src="FJLabs.png" style="width: 40%; height: 50%; margin-left: 10%;">
+        <div class="para" style="margin-left: 35%">
+          <h3>FJ LABS</h3>
+          <p>We are global marketplace investors and we've</p>
+          <p>backed more than 500 entrepreneurs globally.</p>
+        </div>
+        <a href="#" class="learnmore" title="gs" onclick="document.getElementById('createstartupaccount').style.display='block'"><p class="learnmoreword" style="margin-left:35% !important; font-size: 2vh;">Learn more <i class="fa fa-arrow-right" style="color: #1ebdc8; "></i></p></a>
+      </th>
+      <th>
+        <img src="UpHonestCapital.png" style="width: 30%; height: 50%;">
+        <div class="para" style="margin-left: 35% !important">
+          <h3>UpHonest Capital</h3>
+          <p>An Early Stage Focused Venture Capital Group</p>
+        </div>
+        <a href="#" class="learnmore" title="gs" onclick="document.getElementById('createstartupaccount').style.display='block'"><p class="learnmoreword" style="margin-left:35% !important; font-size: 2vh;"> Learn more <i class="fa fa-arrow-right" style="color: #1ebdc8; "></i></p></a>
+      </th>
+      <th>
+        <img src="7-7-6.png" style="width: 30%; height: 50%; margin-left: 0%;">
+        <div class="para" style="margin-left: 35% !important">
+          <h3>Seven Seven Six</h3>
+          <p>We strive to be the most valuable investment our</p>
+          <p>portfolio companies ever have.</p>
+        </div>
+        <a href="#" class="learnmore" title="gs" onclick="document.getElementById('createstartupaccount').style.display='block'"><p class="learnmoreword" style="margin-left:35% !important; font-size: 2vh;">Learn more <i class="fa fa-arrow-right" style="color: #1ebdc8; "></i></p></a>
+      </th>
+    </tr>
+  </table>
+  </div>
+</div>
+
+<div class="container" style="margin-left: 0%;">
+  <div class="firstline"> 
+      <h1 style="float: left; font-size: 6vh; font-family: 'Arial Black'; margin-left: 10%; width: 61%">Based on your activity</h1>
+      <button class="explorebutton" onclick="openForm()"><p class="exploreallword">Explore all <i class="fa fa-arrow-right" style="color:#1ebdc8; "></i></p></button>
+  </div>
+  <div class="secondline" style="position: relative;">
+    <table style="width:95%;padding:5px 0px;">
+      <br><br><br><br>
+    <tr>
+      <th>
+        <img src="FundersClub.png" style="width: 40%; height: 50%; margin-left: 10%;">
+        <div class="para" style="margin-left: 35% !important">
+          <h3>Funders Club</h3>
+          <p>We invest in top startup founders and arm them</p>
+          <p>with the support they need to shake the world.</p>
+        </div>
+        <a href="#" class="learnmore" title="gs" onclick="document.getElementById('createstartupaccount').style.display='block'"><p class="learnmoreword" style="margin-left:35% !important; font-size: 2vh;">Know more <i class="fa fa-arrow-right" style="color: #1ebdc8; "></i></p></a>
+      </th>
+      <th>
+        <img src="Episode1.png" style="width: 40%; height: 50%; margin-left: 10%;">
+        <div class="para" style="margin-left: 35% !important">
+          <h3>Square Ark</h3>
+          <p>We want to help you build the business that big</p>
+          <p>idea can become.</p>
+        </div>
+        <a href="#" class="learnmore" title="gs" onclick="document.getElementById('createstartupaccount').style.display='block'"><p class="learnmoreword" style="margin-left:35% !important; font-size: 2vh;">Know more <i class="fa fa-arrow-right" style="color: #1ebdc8; "></i></p></a>
+      </th>
+      <th>
+        <img src="BlingCapital.png" style="width: 40%; height: 50%; margin-left: 10%;">
+        <div class="para" style="margin-left: 35% !important">
+          <h3>Bling Capital</h3>
+          <p>Bling Capital can help you with building product</p>
+          <p>and scaling distribution.</p>
+        </div>
+        <a href="#" class="learnmore" title="gs" onclick="document.getElementById('createstartupaccount').style.display='block'"><p class="learnmoreword" style="margin-left:35% !important; font-size: 2vh;">Know more <i class="fa fa-arrow-right" style="color: #1ebdc8; "></i></p></a>
+      </th>
+    </tr>
+  </table>
+  </div>
+</div>
+
+<div class="form-popup" id="myForm">
+  <div class="form-container"  style="margin-top:5%; margin-left: 16%; height:600px; width: 1000px;box-shadow: 5px 5px 5px grey">
+      <div class="container" style="position: absolute;top: 6%; margin-left: 0.7%; box-shadow: 10px 10px 10px grey; max-width: 57%;">
+        <span onclick="document.getElementById('myForm').style.display='none'" class="w3-button w3-xlarge w3-transparent" style="position: absolute; right: 0%;" title="Close Modal">×</span>
+          <div class="mySlides">
+            <img src="bsv.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <img src="match.png" style="width: 100%; height: 190%">
+          </div>
+
+          <div class="mySlides">
+            <img src="runout.png" style="width:100%">
+          </div>
+            
+          <a class="next3" onclick="plusSlides(1)" style="font-size: 20px;"></a><!--<i class="fa fa-heart, check, times"></i>-->
+          <a class="next" onclick="plusSlides(1)" style="font-size: 20px;"></a>
+          <a class="next2" onclick="plusSlides(1)" style="font-size: 20px;"></a>
+          <a href="StartupAccount.html" style="font-size: 20px;" class="submit" ></a>>
+      </div>
+  </div>
+</div>
+<br><br><br><br><br><br><br><br>
+ <!--footer-->
+  <footer style="position: relative; margin-top: 10%;">
+    <img src="foot.png" class="foot" alt="foot" style="display: block;margin-left: auto;margin-right: auto; width: 100%;">
+</footer>
+</body>
+
+<script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+</html>
